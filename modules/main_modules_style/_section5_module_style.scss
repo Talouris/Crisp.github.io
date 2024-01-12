@@ -1,0 +1,192 @@
+.section5Wrapper {
+    padding: 5px 10px;
+    @media screen and (min-width: 600px) {
+        padding: 5px 21px;
+    }
+    @media screen and (min-width: 1700px) {
+        padding: 28px 21px;
+    }
+    .section5 {
+        margin: 0 auto;
+        max-width: 296px;
+        @media screen and (min-width: 515px) {
+            max-width: 1878px;
+        }
+        @media screen and (min-width: 1920px) {
+            max-width: 1878px;
+        }
+        .cardShopingInner {
+            .cardShoping {
+                display: flex;
+                @media screen and (min-width: 515px) {
+                    justify-content: flex-end;
+                    position: relative;
+                }
+                &ImgInner {
+                    background-image: url('./img/cardShopingImg.png');
+                    width: 191px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: 1;
+                    @media screen and (min-width: 515px) {
+                        max-width: 1210px;
+                        height: 467px;
+                        width: 100%;
+                        background-image: url('./img/cardShopingImgDsk.png');
+                        background-position: center;
+                    }
+                }
+                &InfoInner {
+                    max-width: 234px;
+                    margin-right: -90px;
+                    background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 30.21%, rgba(200, 222, 236, 0.95) 71.71%, rgba(255, 255, 255, 0.00) 100%);
+                    display: flex;
+                    flex-direction: column;
+                    z-index: 100;
+                    @media screen and (min-width: 515px) {
+                        width: 60%;
+                        height: 467px;
+                        position: absolute;
+                        left: -1px;
+                        max-width: none;
+                        background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 69.27%, rgba(255, 255, 255, 0.00) 100%);
+                        margin-right: 0px;
+                    }
+                    .cardShopingInfo {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 172px;
+                        row-gap: 4px;
+                        margin: 17px 0 16px 23px;
+                        position: relative;
+                        color: #000;
+                        @media screen and (min-width: 515px) {
+                            max-width: none;
+                            width: 100%;
+                            margin: 96px 0 78px 10.7%;
+                            row-gap: 17px;
+                        }
+                        @media screen and (min-width: 730px) {
+                            margin: 96px 0 78px 10.7%;
+                            width: 639px;
+                            max-width: 639px;
+                            row-gap: 17px;
+                        }
+                        @media screen and (min-width: 940px) {
+                            max-width: 639px;
+                            margin-left: 30.7%;
+                            row-gap: 17px;
+                        }
+                        @media screen and (min-width: 1700px) {
+                            margin-left: 23.7%;
+                        }
+                        .bordedSpecInner {
+                            display: none;
+                            position: absolute;
+                            right: 0;
+                            top: -19px;
+                            @media screen and (min-width: 730px) {
+                                display: block;
+                            }
+                        }
+                        &Tittle {
+                            font-family: 'Oswald';
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 19px; /* 135.714% */
+                            white-space: nowrap;
+                            text-transform: uppercase;
+                            @media screen and (min-width: 515px) {
+                                max-width: 582px;
+                                font-size: 44px;
+                                line-height: 72px; /* 128.571% */
+                            }
+                            @media screen and (min-width: 730px) {
+                                max-width: 582px;
+                                font-size: 56px;
+                                line-height: 72px; /* 128.571% */
+                            }
+                        }
+                        &SubTitle {
+                            font-family: 'Roboto Light';
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 13px; /* 130% */
+                            letter-spacing: 0.1px;
+                            margin-bottom: 8.6px;
+                            &:nth-of-type(2) {
+                                display: none;
+                            }
+                            @media screen and (min-width: 515px) {
+                                max-width: 449px;
+                                font-size: 20px;
+                                line-height: 37px; /* 148% */
+                                letter-spacing: 0.25px;
+                                margin-bottom: 7px;
+                                &:nth-of-type(1) {
+                                    display: block;
+                                }
+                                &:nth-of-type(2) {
+                                    display: none;
+                                }
+                            }
+                            @media screen and (min-width: 530px) {
+                                &:nth-of-type(1) {
+                                    display: none;
+                                }
+                                &:nth-of-type(2) {
+                                    display: block;
+                                }
+                            }
+                            @media screen and (min-width: 730px) {
+                                max-width: 639px;
+                                font-size: 25px;
+                            }
+                        }
+                        .cardShopingButton {
+                            display: flex;
+                            width: 85.083px;
+                            height: 32px;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            flex-shrink: 0;
+                            transition-duration: 100ms;
+                            border: 1px solid black;
+                            background-color: initial;
+                            @media screen and (min-width: 515px) {
+                                width: 175px;
+                                height: 56px;
+                            }
+                            @media screen and (min-width: 1700px) {
+                                margin-top: 13px;
+                            }
+                            &:hover {
+                                background-color: #000;
+                                P {
+                                    color: #fff;
+                                }
+                            }
+                            &P {
+                                text-align: center;
+                                font-family: 'Oswald';
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: 0.5px;
+                                text-transform: uppercase;
+                            @media screen and (min-width: 515px) {
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}
