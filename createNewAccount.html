@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creata an Account </title>
+    <link rel="stylesheet" href="./createNewAccoutStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@300;400;500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+
+            function HeaderModule() {
+                return (
+                    <header className="header" id="burger">
+                        <div className="header__burger">
+                            <div className="header__burger-menu" >
+                                <div className="header__burger-bar" id="burgerIcon" onClick={burgerProperty}></div>
+                            </div>
+                            <div className="header__burger-wrapper">
+                                <ul className="header__burger-list">
+                                    <li className="header__burger-item"><a href="index.html" className="header__link">HOME</a></li>
+                                    <li className="header__burger-item"><a href="page2.html" className="header__link">SHOP</a></li>
+                                    <li className="header__burger-item"><a href="#" className="header__link">BLOG</a></li>
+                                    <li className="header__burger-item"><a href="#" className="header__link">SALE</a></li>
+                                    <li className="header__burger-item"><a href="#" className="header__link">CONTACT US</a></li>
+                                </ul>
+                                <div className="header__search-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="7.30769" cy="7.30769" r="6.10769" stroke="white" stroke-width="2.4"/>
+                                        <path d="M13.6406 13.6409L18.9996 18.9998" stroke="white" stroke-width="2.4"/>
+                                    </svg>
+                                    <p className="header__search-hold"><a href="#" className="header__link">SEARCH</a></p>
+                                </div>
+                                <div className="header__action-wrapper">
+                                    <div className="singInContainer header__action-singin-inner">
+                                        <p className="header__action-singin"><a href="singInAccount.html" className="header__link">SING IN</a></p>
+                                    </div>
+                                    <div className="header__action-create-account-inner">
+                                        <p className="header__action-create-account"><a href="createNewAccount.html" className="header__link">CREATE AN  ACCOUNT</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="header__logo-inner">
+                            <img className="header__logo-img" src="./img/logo_shop.png" alt="Logo"/>
+                        </div>
+                        <div className="header__added-icon-inner">
+                            <div className="header__icon-like">
+                                <a href="./whatLiked.html" className="header__icon-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                                        <path d="M10.7096 18.9029L11.5 19.5949L12.2904 18.9029L13.5212 17.8254L13.5229 17.8239L13.561 17.7907C15.7089 15.9176 17.5897 14.2775 18.9222 12.7097C20.2744 11.1187 21.2 9.44687 21.2 7.49591C21.2 4.26214 18.5597 1.8 15.325 1.8C13.9256 1.8 12.5737 2.2769 11.5 3.08132C10.4263 2.2769 9.07441 1.8 7.675 1.8C4.44032 1.8 1.8 4.26214 1.8 7.49591C1.8 9.44687 2.7256 11.1187 4.07783 12.7097C5.41031 14.2774 7.29114 15.9176 9.43903 17.7907L9.47705 17.8239L9.4788 17.8254L10.7096 18.9029Z" stroke="white" stroke-width="2.4"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div className="header__icon-search">
+                                <a href="#" class="header__icon-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="7.30769" cy="7.30769" r="6.10769" stroke="white" stroke-width="2.4"/>
+                                        <path d="M13.6406 13.6409L18.9996 18.9998" stroke="white" stroke-width="2.4"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div className="header__icon-bascet">
+                                <a href="#" class="header__icon-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.26297 6.59995L2.54533 18.8H15.4547L14.737 6.59995H3.26297ZM17 4.19995H1L0 21.2H18L17 4.19995Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20078 2.4V4.2H3.80078V2.2C3.80078 0.984973 4.78576 0 6.00078 0H12.0008C13.2158 0 14.2008 0.984974 14.2008 2.2V4.2H11.8008V2.4H6.20078Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div className="header__wallet">
+                                <div className="header__wallet-subtitle">Shopping Cart</div>
+                                <div className="header__wallet-values">0,00 EUR</div>
+                            </div>
+                        </div>
+                    </header>
+                )
+            };
+            
+            function burgerProperty() {
+                let header = document.querySelector('#burger');
+                let burger = document.querySelector('#burgerIcon');
+                if (header.classList.contains('active-burger')) {
+                    header.classList.remove("active-burger");
+                }
+                else {
+                    header.classList.add("active-burger");
+                }
+            };
+
+            function handleClick(item) {
+                if (item.currentTarget.classList.contains('active')) {
+                    item.currentTarget.classList.remove('active');
+                } else {
+                    item.currentTarget.classList.add('active')
+                }
+            }
+
+            function MainCreateAccount() {
+                return (
+                    <main className="main">
+                        <div className="account__create">
+                            <div className="module__action-href">
+                                <div className="module__action-href-inner">
+                                    <div className="module__action-href-block">
+                                        <p className="module__action--href-info">Home / Womens Dress / Best Chose</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="account__create-title-inner">
+                                <p className="account__create-title">Create New Customer Account</p>
+                            </div>
+                            <div className="account__create-form-inner">
+                                <div className="account__create-suptitle-inner">
+                                    <p className="account__create-suptitle">Personal Information</p>
+                                </div>
+                                <form action="creataAnAccountName" className="account__create-form">
+                                    <div className="account__create-form-item">
+                                        <label for="GetFirstName" className="account__create-form-item-label">First name</label>
+                                        <input id="GetFirstName" type="text" className="account__create-form-item-input"/>
+                                    </div>
+                                    <div class="account__create-form-item">
+                                        <label for="GetLastName" className="account__create-form-item-label">Last Name</label>
+                                        <input id="GetLastName" type="text" className="account__create-form-item-input"/>
+                                    </div>
+                                    <div class="account__create-form-news-letter">
+                                        <input id="NewsLetter" type="checkbox" className="account__create-form-news-letter-item-input"/>    
+                                        <label for="NewsLetter" className="account__create-form-news-letter-item-label">Sign Up for Newsletter</label>
+                                    </div>
+                                </form> 
+                                <div className="account__create-suptitle-inner">
+                                    <p className="account__create-suptitle">Sign Up for Newsletter</p>
+                                </div>  
+                                <form action="createPassEm" className="account__create-form">
+                                    <div className="account__create-form-item">
+                                        <label for="GetEmail" className="account__create-form-item-label">Email</label>
+                                        <input id="GetEmail" type="Email" className="account__create-form-item-input"/>
+                                    </div>
+                                    <div className="account__create-form-item">
+                                        <label for="GetPass" className="account__create-form-item-label">Password</label>
+                                        <input id="GetPass" type="password" className="account__create-form-item-input"/>
+                                    </div>
+                                    <div className="account__create-form-item">
+                                        <label for="GetPassConfirm" className="account__create-form-item-label">Confirm password</label>
+                                        <input id="GetPassConfirm" type="password" className="account__create-form-item-input"/>    
+                                    </div>
+                                </form> 
+                                <div className="account__create-button-inner">
+                                    <div className="account__create-holder">
+                                        <button className="account__create-button" onClick={userCreateAccountAdd}>create an account</button>
+                                    </div>
+                                    <div className="account__create-button-back-inner">
+                                        <button className="account__create-batton-back">back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </main>
+                );
+            };
+
+            function SupFooterModule() {
+                return (
+                    <div class="section10">
+                        <div class="section10__inner">
+                            <div class="section10__block">
+                                <div class="section10__list-style-inner">
+                                    <ul class="section10__list-style">
+                                        <li class="section10__list-item">Duties and Taxes Guaranteed</li>
+                                        <li class="section10__list-item">Free Express Shipping</li>
+                                        <li class="section10__list-item">Customer Love</li>
+                                        <li class="section10__list-item">Easy Returns</li>
+                                        <li class="section10__list-item">Secure Payment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+
+            function FooterModule() {
+                return (
+                    <footer className="footer">
+                        <div className="footer__menu">
+                            <div className="footer__content-holder">
+                                <div className="footer__logo-inner">
+                                    <a href="#" className="footer__logo-link">
+                                        <img src="./img/logo_shop.png" alt="Logo" className="footer__logo-img"/>
+                                    </a>
+                                </div>
+                                <div className="footer__content-inner">
+                                    <div className="footer__content" id="footerMenuItem">
+                                        <div className="footer__content-item" data-num="1" onClick={handleClick}>
+                                            <div className="footer__card-inner">
+                                                <div className="footer__card">
+                                                    <h5 className="footer__card-title">FEATURES</h5>
+                                                </div>
+                                                <ul className="footer__card-list">
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">MEN</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">WOMEN</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">BOYS</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">GIRLS</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">NEW ARRIVALS</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">SHOES</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">SHOES</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">COTHES</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">ACCESSORIES</a></li>
+                                                </ul>
+                                                <div className="footer__card-border"></div>
+                                            </div>
+                                        </div>
+                                        <div className="footer__content-item" data-num="2" onClick={handleClick}>
+                                            <div className="footer__card-inner">
+                                                <div className="footer__card">
+                                                    <h5 className="footer__card-title">MENU</h5>
+                                                </div>
+                                                <ul className="footer__card-list">
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">ABOUT US</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">CONTACTS US</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">MY ACCOUNT</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">ORDER HISTORY</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">MY WISHLIST</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">BLOG</a></li>
+                                                    <li className="footer__card-item"><a href="#" className="footerContentCardInnerListItemLink footer__card-item-link">LOGIN</a></li>
+                                                </ul>
+                                                <div className="footer__card-border"></div>
+                                            </div>
+                                        </div>
+                                        <div className="footer__content-item" data-num="3" onClick={handleClick}>
+                                            <div className="footer__card-inner">
+                                                <div className="footer__card">
+                                                    <h5 className="footer__card-title">CONTACTS US</h5>
+                                                </div>
+                                                <ul className="footer__card-list">
+                                                    <li className="footer__card-item footer__suptitle-style">ADDRESS:</li>
+                                                    <li className="footer__card-item"><a href="https://www.google.com.ua/maps/search/123+STREET+NAME,+CITY,+ENGLAND/@52.7276578,-7.6046226,6z/data=!3m1!4b1?entry=ttu" target="_blank" className="footerContentCardInnerListItemLink footer__card-item-link">123 STREET NAME, CITY, ENGLAND</a></li>
+                                                    <li className="footer__card-item footer__suptitle-style">Phone:</li>
+                                                    <li className=" footer__card-item"><a href="#" class="footerContentCardInnerListItemLink">(123) 456-7890</a></li>
+                                                    <li className="footer__card-item footer__suptitle-style">EMAIL:</li>
+                                                    <li className="footer__card-item"><a href="https://www.google.com/intl/ru/gmail/about/" target="_blank" className="footerContentCardInnerListItemLink footer__card-item-link">MAIL@EXAMPLE.COM</a></li>
+                                                    <li className="footer__card-item footer__suptitle-style">WORKING DAYS/HOURS</li>
+                                                    <li className="footer__card-item">MON - SUN / 9:00AM - 8:00PM</li>
+                                                </ul>
+                                                <div className="footer__card-border"></div>
+                                            </div>
+                                        </div>
+                                        <div className="footer__content-item" onClick={handleClick}>
+                                            <div className="footer__card-inner">
+                                                <div className="footer__card">
+                                                    <h5 className="footer__card-title">FOLLOW US</h5>
+                                                </div>
+                                                <ul className="footer__card-list">
+                                                    <li className="footer__card-item footer__icon-social"><a href="https://www.facebook.com/?ref=logo" target="_blank" className="footer__card-item-link">FACEBOOK</a></li>
+                                                    <li className="footer__card-item footer__icon-social"><a href="https://twitter.com/?lang=ru" target="_blank" className="footer__card-item-link">TWITTER</a></li>
+                                                    <li className="footer__card-item footer__icon-social"><a href="https://www.instagram.com/" target="_blank" className="footer__card-item-link">INSTAGRAM</a></li>
+                                                </ul>
+                                                <div className="footer__card-border"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="footer__join-us">
+                                        <h5 className="footer__join-us-title">JOIN US</h5>
+                                        <p className="footer__join-us-subtitle">SUBSCRIBE TO OUR NEWSLETTERS</p>
+                                        <div className="footer__join-us-form-inner">
+                                            <div className="footer__join-us-form">
+                                                <input type="text" className="footer__join-us-input" placeholder="Email Addres"/>
+                                            </div>
+                                            <div className="footer__join-us-button"><p className="footer__join-us-button-text">SUBSCRIBE</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="footer__mark-inner">
+                            <div className="footer__mark">@ 2019.CRISP THEME DEVELOPED BY BELVG</div>
+                        </div>
+                    </footer>
+                )
+            };
+
+            let arrOfUsers = [];
+            const [arrOfUsersBase, setArrOfUsersBase] = React.useState(arrOfUsers);
+            function userCreateAccountAdd() {                
+                let FirstName = document.getElementById('GetFirstName').value;
+                let LastName = document.getElementById('GetLastName').value;
+                let Email = document.getElementById('GetEmail').value;
+                let Password = document.getElementById('GetPass').value;
+                let ConfirmPass = document.getElementById('GetPassConfirm').value;
+
+                
+                const userCreateAccount = {
+                    FirstName: FirstName,
+                    LastName: LastName,
+                    Email: Email,
+                    Password: Password,
+                    ConfirmPAss: ConfirmPass
+                };
+
+                (Password === ConfirmPass) ? arrOfUsers.push(userCreateAccount) : console.log('Pass not valid')
+
+                console.log(arrOfUsers);
+
+                const handleClick = () => {
+                    const arrOfUsersBaseCopy = arrOfUsersBase.slice();
+                    setArrOfUsersBase(arrOfUsersBaseCopy);
+                    console.log(arrOfUsersBase);
+                }
+            }
+
+            return (
+                <div className="container"> 
+                    <HeaderModule />
+                    <MainCreateAccount />
+                    <SupFooterModule />
+                    <FooterModule />
+                </div>
+            )
+        }
+
+        const domContainer = document.getElementById('root');
+        const root = ReactDOM.createRoot(domContainer);
+        root.render(<App />);
+
+    </script>
+</body>
+</html>
