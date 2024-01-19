@@ -21,7 +21,6 @@ function splitString(stringToSplit, separator) {
       arrayOfStrings.join(" / "),
   );
 }
-
 // Строчка из «Бури» Шекспира. Перевод Михаила Донского.
 var tempestString = "И как хорош тот новый мир, где есть такие люди!";
 var monthString = "Янв,Фев,Мар,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек";
@@ -35,15 +34,16 @@ splitString(monthString, comma);
 
 
 
+
 function burgerProperty() {
     let header = document.querySelector('#burger');
     let burger = document.querySelector('#burgerIcon');
     burger.addEventListener("click",() => {
-        if (header.classList.contains('activeBurger')) {
-            header.classList.remove("activeBurger");
+        if (header.classList.contains('active-burger')) {
+            header.classList.remove("active-burger");
           }
           else {
-            header.classList.add("activeBurger");
+            header.classList.add("active-burger");
           }
     })
 };
@@ -56,7 +56,7 @@ let itemObj = {};
 let itemObjSet = {};
 let i = 0;
 
-const items = document.querySelectorAll('.futuresContent');
+const items = document.querySelectorAll('.footer__content-item');
 
 
 function handleClick(item) {

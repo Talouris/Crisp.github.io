@@ -1,45 +1,34 @@
-.section6Wrapper {
-    .wrapperSectionCatalog {
-        .sectionCatalog {
-            .InnerCatalog {
-                &InnerItem {
-                    &:nth-of-type(1) {
-                        .catalogItem {
-                            &ImgInner {
-                                background-image: url('./img/catalogImg7.png');
-                            }
-                        }
-                    }
-                    &:nth-of-type(2) {
-                        .catalogItem {
-                            &ImgInner {
-                                background-image: url('./img/catalogImg1.png');
-                            }
-                        }
-                    }
-                    &:nth-of-type(3) {
-                        .catalogItem {
-                            &ImgInner {
-                                background-image: url('./img/catalogImg2.png');
-                            }
-                        }
-                    }
-                    &:nth-of-type(4) {
-                        .catalogItem {
-                            &ImgInner {
-                                background-image: url('./img/catalogImg0.png');
-                            }
-                        }
-                    }
-                    &:nth-of-type(5) {
-                        .catalogItem {
-                            &ImgInner {
-                                background-image: url('./img/catalogImg6.png');
-                            }
-                        }
-                    }
-                }   
+.section6 {
+    .section {
+        &__catalog-item {
+            &:nth-of-type(1) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg7.png');
+                }
             }
-        }
+            &:nth-of-type(2) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg1.png');
+                }
+            }
+            &:nth-of-type(3) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg2.png');
+                }
+            }
+            &:nth-of-type(4) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg0.png');
+                }
+            }
+            &:nth-of-type(5) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg6.png');
+                }
+            }
+        } 
+        &__catalog-button-inner {
+            display: none;
+        }  
     }
 }

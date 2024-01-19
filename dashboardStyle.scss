@@ -1,126 +1,238 @@
 @import './default_form_config';
 @import './header_module_style';
-.main {
-    .contentWrapperAccountCreate {
-        .moduleHrefInner {
-            display: flex;
-            justify-content: center;
-            margin: 13px 0;
-            color: #828282;
-            &Block {
-                &TextInner {
-                    .activeChangeHref {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-        &TitleInner {
-            &Title {
-                color: #000;
-                text-align: center;
-                font-family: 'Oswald';
-                font-size: 26px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 68px; /* 141.667% */
-                @media screen and (min-width:700px){
-                    font-size: 48px;
-                }
-            }
-        }
-        .dashboardInner {
+@import './moduleChangerHrefStyles';
+.content {
+    &__inner {
+        .dashboard {
             max-width: 1454px;
             border: 1px solid #000;
             margin: 17px auto 64px auto;
-            &Content {
-                display: flex;
-                margin: 73px 212px 300px 212px;
-                &ActionListInner {
-                    min-width: 275px;
+            &__content {
+                margin: 20px 12%;
+                @media screen and (min-width:630px) {
+                    display: flex;
+                    margin: 20px 7%;
+                    max-width: 924px;
+                }
+                @media screen and (min-width:1300px) {
+                    margin: 73px 12% 0 12%;   
+                }
+            }
+            &__list-inner { 
+                @media screen and (max-width:630px) {
+                    margin-bottom: 65px;
+                }
+                @media screen and (min-width: 630px) {
+                    min-width: 255px;
+                    margin-right: 60px;
+                }
+                @media screen and (min-width: 860px) {
                     margin-right: 108px;
-                    &List {
+                }
+                @media screen and (min-width:1300px) {
+                    margin-bottom: 40px;
+                    margin-right: 108px;
+                    min-width: 275px; 
+                }
+            }
+            &__list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                @media screen and (max-width:629px) {
+                    align-items: center;
+                }
+            }
+            &__item-link {
+                border: none;
+                &:hover {
+                    border: none;
+                }
+            }
+            &__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 288px;
+                height: 44px;
+                color: black;
+                font-family: 'Oswald';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 133.333% */
+                padding-left: 13px;
+                &:hover {
+                    background: #F0F2F2;
+                }
+            }
+            &__info-inner {
+                display: none;
+                &.active-content {
+                    display: block;
+                    @media screen and (max-width:630px) {
                         display: flex;
                         flex-direction: column;
-                        row-gap: 20px;
-                        &Link {
-                            border: none;
-                            &:hover {
-                                border: none;
-                            }
-                            &Item {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                max-width: 288px;
-                                height: 44px;
-                                color: black;
-                                font-family: 'Oswald';
-                                font-size: 18px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: 24px; /* 133.333% */
-                                padding-left: 13px;
-                                &:hover {
-                                    background: #F0F2F2;
-                                }
-                            }
-                        }
-                    }
-                }
-                &InfoInner {
-                    width: 100%;
-                    &Content {
-                        .accountInfo {
-                            &TitleInner {
-                                margin-bottom: 36px;
-                                &Title {
-                                    font-family: 'Oswald';
-                                    font-size: 24px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                }
-                            }
-                            &Content {
-                                &Form {
-                                    display: flex;
-                                    flex-direction: column;
-                                    row-gap: 15px;
-                                    &Sec {
-                                        display: flex;
-                                        align-items: center;
-                                        &Label {
-                                            margin-right: 16px;
-                                            min-width: 147px;
-                                        }
-                                        &Input {
-                                            margin: 0;
-                                        }
-                                    }
-                                    &Checkbox {
-                                        display: flex;
-                                        &Input {
-                                            &.inputForFormsCheckbox {
-                                                margin-right: 10px;
-                                            }
-                                        }
-                                        &Label {
-                                            margin: 0;
-                                        }
-                                    }
-                                    &ButtonInner {
-                                        margin-top: 45px;
-                                        &Button {
-                                            width: 140px;
-                                            height: 50px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        align-items: center;
                     }
                 }
             }
+            &__account-info-title-inner {
+                margin-bottom: 36px;
+            }
+            &__account-info-title {
+                font-family: 'Oswald';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+            }
+            // &__info-content {
+    
+            // }
+            &__account-info-form {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+            }
+            &__account-info-form-item {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: 1035px) {
+                    display: flex;
+                    flex-direction: row;   
+                }
+            }
+            &__account-info-form-item-label {
+                margin-right: 16px;
+                min-width: 147px;
+            }
+            &__account-info-form-item-input {
+                margin: 0;
+            }
+            &__account-info-form-item-checkbox {
+                display: flex;
+            }
+            // &__account-info-form-item-checkbox-input {
+    
+            // }
+            &__input-margin {
+                margin-right: 10px;
+            }
+            &__account-info-form-item-checkbox-label {
+                margin: 0;
+            }
+            &__account-info-form-button-inner {
+                margin-top: 45px;
+            }
+            &__account-info-form-button {
+                width: 140px;
+                height: 50px;
+            }
+            // section Account Dashboard styles
+            &__account-info {
+                margin-bottom: 40px;
+                @media screen and (min-width:1300px) {
+                    margin-bottom: 277px;    
+                }
+            }
+            &__account-info-item {
+                margin-bottom: 20px;
+                @media screen and (min-width:800px) {
+                    margin-bottom: 64px;
+                }
+            }
+            // &__account-info-title-inner {
+
+            // }
+            // &__account-info-title {
+
+            // }
+            &__account-info-content {
+                display: flex;
+                flex-direction: column;
+                column-gap: 30px;
+                @media screen and (min-width:800px) {
+                    flex-direction: row;
+                }
+            }
+            &__account-content-info-item {
+                max-width: 316px;
+                width: 100%;
+            }
+            &__account-content-info-item-title {
+                margin-bottom: 17px;
+                color: #3F3F3F;
+                font-family: 'Oswald';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+            &__account-content-info-item-subtitle {
+                margin-bottom: 10px;
+                color: #828282;
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 125% */
+            }
+            &__account-content-info-item-buttons-inner {
+                display: flex;
+                column-gap: 12px;
+                margin-bottom: 20px;
+            }
+            &__account-content-info-item-button {
+                display: flex;
+                height: 24px;
+                background: #E6F1FA;
+                flex-direction: column;
+                justify-content: center;
+                flex-shrink: 0;
+                color:#000;
+                text-align: center;
+                font-family: 'Roboto Medium';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px; /* 142.857% */
+                border: 1px solid #E6F1FA;
+            }
+
+            // section book styles 
+            &__info-book {
+                @media screen and (min-width:900px)  {
+                    margin-bottom: 170px;
+                }
+                .dashboard__account-info-content {
+                    margin-bottom: 49px;
+                }
+                .select-def {
+                    max-width: 248px;
+                    width: 100%;
+                    @media screen and (min-width:720px) {
+                        max-width: 410px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // &__title-inner {
+
+    // }
+    &__title {
+        color: #000;
+        text-align: center;
+        font-family: 'Oswald';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 68px; /* 141.667% */
+        @media screen and (min-width:700px){
+            font-size: 48px;
         }
     }
 }

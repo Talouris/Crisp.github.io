@@ -1,8 +1,8 @@
 let sliderIndex = 1;
 
 function showSlider(n) {
-  const slides = document.getElementsByClassName("section1wrapper");
-  const dots = document.getElementsByClassName("indexBox");
+  const slides = document.getElementsByClassName("section1__inner");
+  const dots = document.getElementsByClassName("section1__scroll-svg");
   if (n > slides.length) {
     sliderIndex = 1;
   }

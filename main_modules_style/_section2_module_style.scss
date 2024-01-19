@@ -1,10 +1,10 @@
-.section2wrapper {
-    .section2 {
+.section2 {
+    .section2__inner {
         padding: 12px 0 12px 0;
         @media screen and (min-width:1700px) {
             padding-top: 5px;
         }
-        &SupTitle {
+        .section2__sup__title {
             display: none;
             @media screen and (min-width: 1000px) {
                 display: flex;
@@ -19,7 +19,7 @@
                 margin-bottom: -17px;
                 height: 35px;
             }
-            &Text {
+            &-p {
                 background-color: #fff;
                 padding: 0 105px;
                 color: #000;
@@ -32,7 +32,7 @@
                 text-transform: uppercase;
             }
         }
-        &BrandsContainer {
+        .section2__brands__container {
             display: grid;
             grid-template-columns: 43% 43%;
             column-gap: 14px;
@@ -71,21 +71,21 @@
                 border: 1px solid #000;
                 margin: 0 auto;
             }
-            &ItemsBlock {
+            &__item__inner {
                 cursor: pointer;
                 display: flex;
                 justify-content: center;
                 .imgChanel {
                     background-image: url(./img/chanel.svg);
                 }
-                .descSvg {
+                .desc-svg {
                     display: none;
                 }
                 @media screen and (min-width: 1000px) {
-                    .descSvg {
+                    .desc-svg {
                         display: block;
                     }
-                    .mobileSvg {
+                    .mobile-svg {
                         display: none;
                     }
                     &:last-child {

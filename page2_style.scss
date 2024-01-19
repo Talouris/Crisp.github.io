@@ -1,52 +1,166 @@
 @import './default_form_config';
 @import './header_module_style';
-.main { 
-    @import './main_modules_style/section3_module_style';
-    @import './moduleChangerHrefStyles';
-    @import './main_modules_style/section4_module_style';
-    @import './main_modules_style/section5_module_style';
-    @import './main_modules_style/section10_module_style';  
-    .page3Config {
-        .section5Wrapper {
-            .section5 {
-                 .cardShopingInner {
-                    .cardShoping {
-                            .cardShopingInfoInner  {
-                                background: linear-gradient(90deg, #F6F8FC 0%, #F6F8FC 44.79%, #F5F7FA 74.48%, rgba(243, 239, 238, 0.00) 100%);
-                                width: 75%;
-                            }
-                            .cardShopingImgInner {
-                                max-width: 915px;
-                                background-image: url('./img/page2-Img-sec5.png');  
-                            }
-                    }
-                 }
-            }
+@import './main_modules_style/section3_module_style';
+@import './moduleChangerHrefStyles';
+@import './main_modules_style/section4_module_style';
+@import './main_modules_style/section5_module_style';
+@import './main_modules_style/section10_module_style';  
+.main {  
+    .brand-list-inner {
+        display: none;
+    }
+    .size-list-inner {
+        display: none;
+    }
+    .dress-list-inner, .color-list-inner, .price-list-inner {
+        display: none;
+    }
+    @media (min-width:1120px) and (max-width:1488px) {
+        .section4 {
+            display: flex;
+        }
+        .section__catalog-list {
+            grid-template-columns: 344px 344px;
+            max-width: none;
         }
     }
-    .colorFilter {
-        &ListStyle {
-            max-width: 270px;
-            display: grid;
-            grid-template-columns: 46px 46px 46px 46px 46px;
-            grid-template-rows: 46px 46px 46px 46px;
-            grid-row-gap: 10px;
-            grid-column-gap: 10px;
-            &ListItem {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 46px;
-                height: 46px;
-                border: 1px solid #C4C4C4;
-                color: #C4C4C4;
-                text-transform: uppercase;
-                &:hover {
-                    border: 2px solid #000;
-                    color: #000;
+    @media (min-width:1488px) and (max-width:1880px) {
+        .section4 {
+            display: flex;
+        }
+        .section__catalog-list {
+            grid-template-columns: 344px 344px 344px;
+        }
+    }
+    .page3Config {
+        .section5 {
+            &__inner {
+                .card__shoping-inner {
+                    .card__shoping {
+                        &-info-holder  {
+                            background: linear-gradient(90deg, #F6F8FC 0%, #F6F8FC 44.79%, #F5F7FA 74.48%, rgba(243, 239, 238, 0.00) 100%);
+                            width: 75%;
+                        }
+                        &-img-holder {
+                            max-width: 915px;
+                            background-image: url('./img/page2-Img-sec5.png');  
+                        }    
+                    }
                 }
             }
         }
+    }
+    .slider__price-size {
+        display: flex;
+        column-gap: 20px;
+        justify-content: flex-end;
+        margin: 10px 0 20px 0;
+        .slider__price {
+            &-select {
+                width: 205px;
+                height: 46px;   
+                font-family: 'Oswald';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 68px; /* 485.714% */
+                text-transform: uppercase;
+                padding-left: 11px;
+                padding-right: 18px;
+                border: 1px solid #C4C4C4;
+                @media screen and (min-width: 700px) {
+                    width: 255px;
+                }
+            }
+            &-option {
+                margin: 0;
+            }
+        }
+        .slider__size {
+            &-select {
+                width: 69px;
+                height: 46px;
+                font-family: 'Oswald';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 68px; /* 485.714% */
+                text-transform: uppercase;
+                padding-left: 11px;
+                border: 1px solid #C4C4C4;
+            }
+            &-option {
+                margin: 0;
+            }
+        }
+    }
+    .catalogPlusButtonInner {
+        .section5 {
+            &__inner {
+                .card__shoping-inner {
+                    .card__shoping-info-holder {
+                        background: linear-gradient(90deg, #000 0%, #000 69.37%, #000 89.11%, rgba(0, 0, 0, 0.00) 100%);
+                        .card__shoping-info {
+                            color: #fff;
+                            @media screen and (min-width:630px) and (max-width: 805px){
+                                width: 100%;
+                                max-width: 500px;
+                            }
+                            @media screen and (min-width:940px){
+                                margin-left: 5%;
+                            }
+                            .card__shoping-title {
+                                @media screen and (min-width:510px) and (max-width: 630px){
+                                    font-size: 30px;
+                                }
+                                @media screen and (min-width:630px) and (max-width: 805px){
+                                    font-size: 44px;
+                                }
+                            }
+                            .card__shoping-subtitle {
+                                @media screen and (min-width:510px) and (max-width: 630px){
+                                    font-size: 15px;
+                                }
+                                @media screen and (min-width:729px) and (max-width: 800px){
+                                    font-size: 22px;
+                                }
+                            }
+                            .card__shoping-border {
+                                svg > path {
+                                    stroke: #fff;
+                                }
+                            }
+                            .card__shoping-button {
+                                border: 1px solid #fff;
+                                color: #fff;
+                                transition-duration: 400ms;
+                                &:hover {
+                                    border: 1px solid gold;
+                                    border-radius: 15px;
+                                    box-shadow: 1px 3px 10px gold;
+                                    background: #fff;
+                                    p {
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card__shoping-img-holder {
+                        max-width: 175px;
+                        background-image: url('./img/page2-blackBg-cardGirl.png');
+                        @media screen and (min-width: 460px) {
+                            background-image: url('./img/page2-Bg.png');
+                            max-width: 950px;    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .module__action-href {
+        justify-content: flex-start;
+        margin-left: 20px;
     }
 }
 @import './footer_module_style';

@@ -608,7 +608,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .inputForForms {
-  width: 392px;
+  width: 230px;
   height: 44px;
   border: 1px solid #C4C4C4;
   padding-left: 14px;
@@ -620,6 +620,11 @@ input[type=range]::-webkit-slider-runnable-track {
   font-weight: 400;
   line-height: 20px; /* 125% */
   margin: 0;
+}
+@media screen and (min-width: 800px) {
+  .inputForForms {
+    width: 392px;
+  }
 }
 
 .inputForFormsCheckbox {
@@ -1962,6 +1967,15 @@ input[type=range]::-webkit-slider-runnable-track {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 40px;
+}
+.main .section4__filter-handle-label {
+  color: #3F3F3F;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 485.714% */
+  text-transform: uppercase;
 }
 .main .section4 .color__filter-size-inner .color__filter-size-list {
   max-width: 270px;
