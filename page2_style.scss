@@ -15,6 +15,11 @@
     .dress-list-inner, .color-list-inner, .price-list-inner {
         display: none;
     }
+    .section4 {
+        @media screen and (max-width: 459px) {
+            max-width:300px
+        }
+    }
     @media (min-width:1120px) and (max-width:1488px) {
         .section4 {
             display: flex;

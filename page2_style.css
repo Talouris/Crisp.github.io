@@ -2090,6 +2090,11 @@ input[type=range]::-webkit-slider-runnable-track {
 .main .dress-list-inner, .main .color-list-inner, .main .price-list-inner {
   display: none;
 }
+@media screen and (max-width: 459px) {
+  .main .section4 {
+    max-width: 300px;
+  }
+}
 @media (min-width: 1120px) and (max-width: 1488px) {
   .main .section4 {
     display: flex;
