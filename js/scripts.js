@@ -39,11 +39,11 @@ function burgerProperty() {
     let header = document.querySelector('#burger');
     let burger = document.querySelector('#burgerIcon');
     burger.addEventListener("click",() => {
-        if (header.classList.contains('active-burger')) {
-            header.classList.remove("active-burger");
+        if (header.classList.contains('activeBurger')) {
+            header.classList.remove("activeBurger");
           }
           else {
-            header.classList.add("active-burger");
+            header.classList.add("activeBurger");
           }
     })
 };
@@ -56,7 +56,7 @@ let itemObj = {};
 let itemObjSet = {};
 let i = 0;
 
-const items = document.querySelectorAll('.footer__content-item');
+const items = document.querySelectorAll('.futuresContent');
 
 
 function handleClick(item) {

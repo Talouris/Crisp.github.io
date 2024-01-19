@@ -1,260 +1,250 @@
 .header {
-    margin: 0 auto;
-    display: flex; /*flex*/
-    justify-content: space-between;
-    background-color: black;
-    color: #fff;
-    padding: 9px 0;
-    @media screen and (min-width:1200px) {
-        max-width: 1920px;
-        padding: 36.5px 0 37px 21px;
-    }
-    &.active-burger {
-        width: 100dvw;
-        height: 100%;
-        padding: 0;
-        .header__burger {
-            margin: 0 auto;
-            padding-top: 20px;
+        margin: 0 auto;
+        display: flex; /*flex*/
+        justify-content: space-between;
+        background-color: black;
+        color: #fff;
+        padding: 9px 0;
+        @media screen and (min-width:1200px) {
+            max-width: 1920px;
+            padding: 36.5px 0 37px 21px;
         }
-        .header__burger-bar {
-            background-color: #000;
-            &:before {
-                top: 0;
-                transform:rotate(45deg);
+        &.activeBurger {
+            width: 100dvw;
+            height: 100%;
+            padding: 0;
+            .headerBurgerMenu {
+                margin: 0 auto;
+                padding-top: 20px;
+                .headerBurgerMenuBurger {
+                    .headerBurgerMenuBurgerBar {
+                        background-color: #000;
+                        &:before {
+                            top: 0;
+                            transform:rotate(45deg);
+                        }
+                        &:after {
+                            top: 0;
+                            transform:rotate(135deg);
+                        }
+                    }
+                }
+                .burgerWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 65px 30px;
+                    font-size: 22px;
+                    row-gap: 60px;
+                    .burgerList {
+                        display: flex;
+                        flex-direction: column;
+                        flex-shrink: 0;
+                        row-gap: 20px;
+                        .burgerItem {
+                            color: #fff;
+                        }
+                    }
+                    .searchButton {
+                        display: flex;
+                        column-gap: 6px;
+                        @media screen and (min-width:1000px) {
+                            margin-right: 37%;
+                        }
+                        svg {
+                            margin-top: 3px;
+                        }
+                        &Content {
+                            color: #fff;
+                        }
+                    }
+                    .accountActionWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        .singInContainer {
+                            &Content {
+                                color: #fff;
+                            }
+                        }
+                        .createAccountContainer {
+                            &Content {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
             }
-            &:after {
-                top: 0;
-                transform:rotate(135deg);
+            .headerLogo {
+                display: none;
+            }    
+            .headerAddedIcon {
+                display: none;
             }
         }
-        .header__burger-wrapper {
+        &BurgerMenu {
+            margin: 10px 0 0 14px;
+            @media screen and (min-width:1200px) {
+                display: flex;
+                order: 1;
+                margin: 0;
+                align-items: flex-start;
+            }
+            &Burger {
+                width: 20px;
+                height: 15px;
+                position: relative;
+                cursor: pointer;
+                @media screen and (min-width:1200px) {
+                    display: none;
+                }
+                &Bar {
+                    content: '';
+                    width: 20px;
+                    height: 3px;
+                    background-color: #fff;
+                    position: absolute;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+                    top: 40%;
+                    left: 0;
+                    &:before {
+                        content: '';
+                        width: 20px;
+                        height: 3px;
+                        background-color: #fff;
+                        position: absolute;
+                        transition: 0.5s;
+                        top: -6px;
+                    }
+                    &:after {
+                        content: '';
+                        width: 20px;
+                        height: 3px;
+                        background-color: #fff;
+                        transition: 0.5s;
+                        position: absolute;
+                        top: 6px;
+                    }
+                }
+            }
+            .burgerWrapper {
+                display: none;
+                font-family: 'Oswald';
+                @media screen and (min-width:1200px) {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 29px;
+                    margin-top: 7px;
+                }
+                @media screen and (min-width: 1900px) {
+                    margin-left: 17px;
+                }
+                .burgerList {
+                    @media screen and (min-width:1200px) {
+                        display: flex;
+                        column-gap: 33px;
+                        margin-right: 0px;
+                    }
+                    @media screen and (min-width: 1900px) {
+                        column-gap: 32px;
+                    }
+                    .burgerItem {
+                        display: flex;
+                        flex-shrink: 0;
+                        color: #fff;
+                    }
+                }
+                .searchButton {
+                    @media screen and (min-width:1200px) {
+                        display: flex;
+                    }
+                    &Content {
+                        color: #fff;
+                        margin-left: 8px;
+                    }
+                }
+                .accountActionWrapper {
+                    font-family: 'Oswald';
+                    @media screen and (min-width:1200px) {
+                        display: flex;
+                        flex-shrink: 0;
+                        column-gap: 12px;
+                    }
+                    @media screen and (min-width:1800px) {
+                        position: absolute;
+                        right: 201px;
+                        top: 47px;
+                        column-gap: 17px;
+                    }
+                    .singInContainer {
+                        &Content {
+                            color: #fff;
+                        }
+                    }
+                    .createAccountContainer {
+                        &Content {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &Logo {
+            &Img{
+                width: 66.227px;
+                height: 35.663px;
+                cursor: pointer;
+                @media screen and (min-width:1200px) {
+                    display: flex;
+                    order: 0;
+                    width: 92.5px;
+                    height: 42.5px;
+                }
+            }
+        }
+        &AddedIcon {
             display: flex;
-            flex-direction: column;
-            padding: 65px 30px;
-            font-size: 22px;
-            row-gap: 60px;
-        } 
-        .header__burger-list {
-            display: flex;
-            flex-direction: column;
             flex-shrink: 0;
-            row-gap: 20px;
-        }
-        .burgerItem {
-            color: #fff;
-        }
-        .header__burger-item {
-            color:#fff;
-        }
-        .header__search-button {
-            display: flex;
-            column-gap: 6px;
-            @media screen and (min-width:1000px) {
-                margin-right: 37%;
+            order: 2;
+            margin: 5px 14px 0 0;
+            @media screen and (min-width:1200px) {
+                align-items: center;
             }
-            svg {
-                margin-top: 3px;
+            &Like {
+                display: none;
+                @media screen and (min-width:1200px) {
+                    display: block;
+                }
             }
-            .header__search-hold {
-                color: #fff;
+            &Search {
+                margin-top: 2px;
+                cursor: pointer;
+                @media screen and (min-width:1200px) {
+                    display: none;
+                }
+            }
+            &Bascet {
+                margin-left: 15px;
+                cursor: pointer;
+            }
+            &Wallet {
+                font-family: 'Oswald';
+                display: none;
+                @media screen and (min-width:1200px) {
+                    display: flex;
+                    flex-direction: column;
+                    order: 3;
+                    margin-left: 11px;
+                }
+                @media screen and (min-width:1900px) {
+                    margin-right: 12px;
+                    line-height: 15px;
+                }
+                .walletSubTitle {
+                    margin: 0;
+                }
+                .walletValus {
+                    margin: 0;
+                }
             }
         }
-        .header__action-wrapper {
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
-        }
-        .header__action-singin {
-            color: #fff;
-        }
-        .header__action-create-account {
-            color: #fff;
-        }
-        .header__logo-inner {
-            display: none;
-        }
-        .header__added-icon-inner {
-            display: none;
-        }
-    }
-    &__burger {
-        margin: 10px 0 0 14px;
-        @media screen and (min-width:1200px) {
-            display: flex;
-            order: 1;
-            margin: 0;
-            align-items: flex-start;
-        }
-    }
-    &__burger-menu {
-        width: 20px;
-        height: 15px;
-        position: relative;
-        cursor: pointer;
-        @media screen and (min-width:1200px) {
-            display: none;
-        }
-    }
-    &__burger-bar {
-        content: '';
-        width: 20px;
-        height: 3px;
-        background-color: #fff;
-        position: absolute;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-        top: 40%;
-        left: 0;
-        &:before {
-            content: '';
-            width: 20px;
-            height: 3px;
-            background-color: #fff;
-            position: absolute;
-            transition: 0.5s;
-            top: -6px;
-        }
-        &:after {
-            content: '';
-            width: 20px;
-            height: 3px;
-            background-color: #fff;
-            transition: 0.5s;
-            position: absolute;
-            top: 6px;
-        }
-    }
-    &__burger-wrapper {
-        display: none;
-        font-family: 'Oswald';
-        @media screen and (min-width:1200px) {
-            display: flex;
-            align-items: center;
-            column-gap: 29px;
-            margin-top: 7px;
-        }
-        @media screen and (min-width: 1900px) {
-            margin-left: 17px;
-        }
-    }
-    &__burger-list {
-        @media screen and (min-width:1200px) {
-            display: flex;
-            column-gap: 33px;
-            margin-right: 0px;
-        }
-        @media screen and (min-width: 1900px) {
-            column-gap: 32px;
-        }
-    }
-    &__burger-item {
-        display: flex;
-        flex-shrink: 0;
-        color: #fff;
-    }
-    // &__link {
-
-    // }
-    &__search-button {
-        @media screen and (min-width:1200px) {
-            display: flex;
-        }
-        &Content {
-            color: #fff;
-            margin-left: 8px;
-        }
-    }
-    &__search-hold {
-        color: #fff;
-        margin-left: 8px;
-    }
-    &__action-wrapper {
-        font-family: 'Oswald';
-        @media screen and (min-width:1200px) {
-            display: flex;
-            flex-shrink: 0;
-            column-gap: 12px;
-        }
-        @media screen and (min-width:1800px) {
-            position: absolute;
-            right: 201px;
-            top: 47px;
-            column-gap: 17px;
-        }
-    }
-    // &__action-singin-inner {
-
-    // }
-    &__action-singin {
-        color: #fff;
-    }
-    // &__action-create-account-inner {
-
-    // }
-    &__action-create-account {
-        color: #fff;
-    }
-    // &__logo-inner {
-
-    // }
-    &__logo-img {
-        width: 66.227px;
-        height: 35.663px;
-        cursor: pointer;
-        @media screen and (min-width:1200px) {
-            display: flex;
-            order: 0;
-            width: 92.5px;
-            height: 42.5px;
-        }
-    }
-    &__added-icon-inner {
-        display: flex;
-        flex-shrink: 0;
-        order: 2;
-        margin: 5px 14px 0 0;
-        @media screen and (min-width:1200px) {
-            align-items: center;
-        }
-    }
-    &__icon-like {
-        display: none;
-        @media screen and (min-width:1200px) {
-            display: block;
-        }
-    }
-    // &__icon-link {
-
-    // }
-    &__icon-search {
-        margin-top: 2px;
-        cursor: pointer;
-        @media screen and (min-width:1200px) {
-            display: none;
-        }
-    }
-    &__icon-bascet {
-        margin-left: 15px;
-        cursor: pointer;
-    }
-    &__wallet {
-        font-family: 'Oswald';
-        display: none;
-        @media screen and (min-width:1200px) {
-            display: flex;
-            flex-direction: column;
-            order: 3;
-            margin-left: 11px;
-        }
-        @media screen and (min-width:1900px) {
-            margin-right: 12px;
-            line-height: 15px;
-        }
-    }
-    // &__wallet-subtitle {
-
-    // }
-    // &__wallet-values {
-
-    // }
 }

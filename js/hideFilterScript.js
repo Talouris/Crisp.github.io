@@ -1,18 +1,18 @@
 function hideFilter() {
-    const brand = document.querySelector(".brand-title");
-    const brandList = document.querySelector(".brand-list-inner");
+    const brand = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerTitleInnerTitle");
+    const brandList = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInner");
   
-    const size = document.querySelector(".size-title");
-    const sizeList = document.querySelector(".size-list-inner");
+    const size = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilSizeInnerInnerTitleInnerTitle");
+    const sizeList = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilSizeInnerInnerColorFilterInner");
   
-    const lenght = document.querySelector(".dress-title");
+    const lenght = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilLengthTitleInnerTitle");
     const lenghtList = document.getElementById("filterLenght");
   
-    const color = document.querySelector(".color-title");
-    const colorList = document.querySelector(".color-list-inner");
+    const color = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerTitleInnerTitle");
+    const colorList = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInner");
   
-    const price = document.querySelector(".price-title");
-    const priceList = document.querySelector(".price-list-inner");
+    const price = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerTitleInnerTitle");
+    const priceList = document.querySelector(".section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInner");
   
   
     const arrOfFilter = [brand,size,lenght,color,price];

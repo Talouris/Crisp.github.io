@@ -1,166 +1,168 @@
-.section9 {
-    &__inner {
+.section9Wrapper {
+    .section9 {
         background-color: #F8F9FB;
         @media screen and (min-width: 1820px) {
             padding: 12px 0 0 0;
         }
-    }
-    &__block {
-        max-width: 292px;
-        margin: 0 auto;
-        @media screen and (min-width: 700px) {
-            max-width: none;
-        }
-    }
-    &__title-inner {
-        @media screen and (min-width: 700px) {
-            width: 72%;
+        &Inner {
+            max-width: 292px;
             margin: 0 auto;
-        }
-        @media screen and (min-width: 1000px) {
-            width: 88%;
-        }
-        @media screen and (min-width: 1700px) {
-            width: 94%;
-        }
-        @media screen and (min-width: 1800px) {
-            width: 98%;
-        }
-    }
-    &__title {
-        color: #000;
-        font-family: 'Oswald';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 68px; /* 377.778% */
-        @media screen and (min-width: 1000px) {
-            font-size: 24px;
-        }
-    }
-    &__comments-list {
-        padding-bottom: 24px;
-        @media screen and (min-width: 700px) {
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
-            margin: 0 auto;
-        }
-        @media screen and (min-width: 700px) {
-            width: 95%;
-        }
-        @media screen and (min-width: 1800px) {
-            width: 100%;
-            margin-top: 23px;
-            padding-bottom: 0;
-        }
-    }
-    &__comments-item {
-        max-width: 292px;
-        background-color: #FFF;
-        &:not(:last-child) {
-            margin: 0 auto 14px auto;
-            @media screen and (min-width: 1000px) {
-                margin: 0 auto 46px auto;
+            @media screen and (min-width: 700px) {
+                max-width: none;
             }
-        }
-        &:last-child{
-            margin: 0 auto;
-            @media screen and (min-width: 1000px) {
-                margin: 0 auto 46px auto;
+            &PInner {
+                @media screen and (min-width: 700px) {
+                    width: 72%;
+                    margin: 0 auto;
+                }
+                @media screen and (min-width: 1000px) {
+                    width: 88%;
+                }
+                @media screen and (min-width: 1700px) {
+                    width: 94%;
+                }
+                @media screen and (min-width: 1800px) {
+                    width: 98%;
+                }
+                &P {
+                    color: #000;
+                    font-family: 'Oswald';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 68px; /* 377.778% */
+                    @media screen and (min-width: 1000px) {
+                        font-size: 24px;
+                        }
+                }
             }
-        }
-        @media screen and (min-width: 1000px) {
-            max-width: 447px;
-        }
-    }
-    &__card-inner {
-        margin: 0 12px;
-        padding: 7px 0 4px 4px;
-        @media screen and (min-width: 1820px) {
-            margin:0 24px;
-            padding-left: 0;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    &__article-inner {
-        @media screen and (min-width: 1820px) {
-            margin-bottom: 11px;
-        }
-    }
-    &__article {
-        color:#BDBDBD;
-        font-family: 'Oswald';
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-transform: uppercase;
-        @media screen and (min-width:1000px) {
-            font-size: 18px;
-        }
-    }
-    &__card-title-inner {   
-        margin-bottom: 14px; 
-        @media screen and (min-width:1820px) {
-            margin-bottom: 23px;
-        }
-    }
-    &__card-title {
-        text-transform: capitalize;
-        color: #000;
-        font-family: 'Oswald';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 19px; /* 135.714% */
-        @media screen and (min-width: 1000px) {
-            font-size: 26px;
-            line-height: normal;    
-        }
-    }
-    &__card-sub-title-inner {
-        margin-bottom: 51px;
-        max-width: 267.8px;
-        @media screen and (min-width: 1000px) {
-            max-width: 398.6px; 
-            height: 144px; 
-            margin-bottom: 76px;
-        }
-    }
-    &__card-sub-title {
-        color: #000;
-        font-family: 'Roboto Light';
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 13px; /* 130% */
-        letter-spacing: 0.1px;
-        @media screen and (min-width: 1000px) {
-            font-size: 16px;
-            line-height: 24px; /* 150% */
-            letter-spacing: 0.16px;    
-        }
-        @media screen and (min-width:1500px) {
-            letter-spacing: 0;
-        }
-    }
-    &__border {
-        width: 99.7%;
-        height: 2px;
-        margin: 0 auto;
-        border-bottom: 1px solid #000;
-    }
-    &__data {
-        color:#4F4F4F;
-        font-family: 'Oswald';
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 37px; /* 370% */
-        @media screen and (min-width: 1000px) {
-            font-size: 13px;
+            &CommentsInner {
+                padding-bottom: 24px;
+                @media screen and (min-width: 700px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                @media screen and (min-width: 700px) {
+                    width: 95%;
+                }
+                @media screen and (min-width: 1800px) {
+                    width: 100%;
+                    margin-top: 23px;
+                    padding-bottom: 0;
+                }
+                &CardInner {
+                    max-width: 292px;
+                    background-color: #FFF;
+                    &:not(:last-child) {
+                        margin: 0 auto 14px auto;
+                        @media screen and (min-width: 1000px) {
+                            margin: 0 auto 46px auto;
+                        }
+                    }
+                    &:last-child{
+                        margin: 0 auto;
+                        @media screen and (min-width: 1000px) {
+                            margin: 0 auto 46px auto;
+                        }
+                    }
+                    @media screen and (min-width: 1000px) {
+                        max-width: 447px;
+                    }
+                    &Card {
+                        margin: 0 12px;
+                        padding: 7px 0 4px 4px;
+                        @media screen and (min-width: 1820px) {
+                            margin:0 24px;
+                            padding-left: 0;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        &Article {
+                            @media screen and (min-width: 1820px) {
+                                margin-bottom: 11px;
+                            }
+                            &P {
+                                color:#BDBDBD;
+                                font-family: 'Oswald';
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                @media screen and (min-width:1000px) {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        &Title {   
+                            margin-bottom: 14px; 
+                            @media screen and (min-width:1820px) {
+                                margin-bottom: 23px;
+                            }
+                            &H5 {
+                                text-transform: capitalize;
+                                color: #000;
+                                font-family: 'Oswald';
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 19px; /* 135.714% */
+                                @media screen and (min-width: 1000px) {
+                                    font-size: 26px;
+                                    line-height: normal;    
+                                }
+                            }
+                        }
+                        &SubTitle {
+                            margin-bottom: 51px;
+                            max-width: 267.8px;
+                            @media screen and (min-width: 1000px) {
+                                max-width: 398.6px; 
+                                height: 144px; 
+                                margin-bottom: 76px;
+                            }
+                            &P {
+                                color: #000;
+                                font-family: 'Roboto Light';
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 13px; /* 130% */
+                                letter-spacing: 0.1px;
+                                @media screen and (min-width: 1000px) {
+                                    font-size: 16px;
+                                    line-height: 24px; /* 150% */
+                                    letter-spacing: 0.16px;    
+                                }
+                                @media screen and (min-width:1500px) {
+                                    letter-spacing: 0;
+                                }
+                            }
+                        }
+                        &Border {
+                            width: 99.7%;
+                            height: 2px;
+                            margin: 0 auto;
+                            border-bottom: 1px solid #000;
+                        }
+                        &ActualData {
+                            &P {
+                                color:#4F4F4F;
+                                font-family: 'Oswald';
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 37px; /* 370% */
+                                @media screen and (min-width: 1000px) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

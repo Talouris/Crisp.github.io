@@ -8,317 +8,308 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@300;400;500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <script defer src="./js/scripts.js"></script>
-    <script defer src="./js/rageScript.js"></script>
-    <script defer src="./js/hideFilterScript.js"></script>
+    <script defer src="../../pages/js/scripts.js"></script>
+    <script defer src="../../pages/js/rageScript.js"></script>
+    <script defer src="../../pages/js/hideFilterScript.js"></script>
     
 </head>
 <body>
     <header class="header" id="burger">
-        <div class="header__burger">
-            <div class="header__burger-menu" >
-                <div class="header__burger-bar" id="burgerIcon"></div>
+        <div class="headerBurgerMenu">
+            <div class="headerBurgerMenuBurger" >
+                <div class="headerBurgerMenuBurgerBar" id="burgerIcon"></div>
             </div>
-            <div class="header__burger-wrapper">
-                <ul class="header__burger-list">
-                    <li class="header__burger-item"><a href="index.html" class="header__link">HOME</a></li>
-                    <li class="header__burger-item"><a href="page2.html" class="header__link">SHOP</a></li>
-                    <li class="header__burger-item"><a href="#" class="header__link">BLOG</a></li>
-                    <li class="header__burger-item"><a href="#" class="header__link">SALE</a></li>
-                    <li class="header__burger-item"><a href="#" class="header__link">CONTACT US</a></li>
+            <div class="burgerWrapper">
+                <ul class="burgerList">
+                    <li class="burgerItem"><a href="heaer_module.html" class="itemLink">HOME</a></li>
+                    <li class="burgerItem"><a href="page2.html" class="itemLink">SHOP</a></li>
+                    <li class="burgerItem"><a href="#" class="itemLink">BLOG</a></li>
+                    <li class="burgerItem"><a href="#" class="itemLink">SALE</a></li>
+                    <li class="burgerItem"><a href="#" class="itemLink">CONTACT US</a></li>
                 </ul>
-                <div class="header__search-button">
+                <div class="searchButton">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="7.30769" cy="7.30769" r="6.10769" stroke="white" stroke-width="2.4"/>
                         <path d="M13.6406 13.6409L18.9996 18.9998" stroke="white" stroke-width="2.4"/>
                     </svg>
-                    <p class="header__search-hold"><a href="#" class="header__link">SEARCH</a></p>
+                    <p class="searchButtonContent"><a href="#" class="itemLink">SEARCH</a></p>
                 </div>
-                <div class="header__action-wrapper">
-                    <div class="singInContainer header__action-singin-inner">
-                        <p class="header__action-singin"><a href="singInAccount.html" class="header__link">SING IN</a></p>
+                <div class="accountActionWrapper">
+                    <div class="singInContainer">
+                        <p class="singInContainerContent"><a href="singInAccount.html" class="itemLink">SING IN</a></p>
                     </div>
-                    <div class="header__action-create-account-inner">
-                        <p class="header__action-create-account"><a href="createNewAccount.html" class="header__link">CREATE AN  ACCOUNT</a></p>
+                    <div class="createAccountContainer">
+                        <p class="createAccountContainerContent"><a href="createNewAccount.html" class="itemLink">CREATE AN  ACCOUNT</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header__logo-inner">
-            <img class="header__logo-img" src="./img/logo_shop.png" alt="Logo">
+        <div class="headerLogo">
+            <img class="headerLogoImg" src="./img/logo_shop.png" alt="Logo">
         </div>
-        <div class="header__added-icon-inner">
-            <div class="header__icon-like">
-                <a href="./whatLiked.html" class="header__icon-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                        <path d="M10.7096 18.9029L11.5 19.5949L12.2904 18.9029L13.5212 17.8254L13.5229 17.8239L13.561 17.7907C15.7089 15.9176 17.5897 14.2775 18.9222 12.7097C20.2744 11.1187 21.2 9.44687 21.2 7.49591C21.2 4.26214 18.5597 1.8 15.325 1.8C13.9256 1.8 12.5737 2.2769 11.5 3.08132C10.4263 2.2769 9.07441 1.8 7.675 1.8C4.44032 1.8 1.8 4.26214 1.8 7.49591C1.8 9.44687 2.7256 11.1187 4.07783 12.7097C5.41031 14.2774 7.29114 15.9176 9.43903 17.7907L9.47705 17.8239L9.4788 17.8254L10.7096 18.9029Z" stroke="white" stroke-width="2.4"/>
-                    </svg>
-                </a>
+        <div class="headerAddedIcon">
+            <div class="headerAddedIconLike">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                    <path d="M10.7096 18.9029L11.5 19.5949L12.2904 18.9029L13.5212 17.8254L13.5229 17.8239L13.561 17.7907C15.7089 15.9176 17.5897 14.2775 18.9222 12.7097C20.2744 11.1187 21.2 9.44687 21.2 7.49591C21.2 4.26214 18.5597 1.8 15.325 1.8C13.9256 1.8 12.5737 2.2769 11.5 3.08132C10.4263 2.2769 9.07441 1.8 7.675 1.8C4.44032 1.8 1.8 4.26214 1.8 7.49591C1.8 9.44687 2.7256 11.1187 4.07783 12.7097C5.41031 14.2774 7.29114 15.9176 9.43903 17.7907L9.47705 17.8239L9.4788 17.8254L10.7096 18.9029Z" stroke="white" stroke-width="2.4"/>
+                </svg>
             </div>
-            <div class="header__icon-search">
-                <a href="#" class="header__icon-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="7.30769" cy="7.30769" r="6.10769" stroke="white" stroke-width="2.4"/>
-                        <path d="M13.6406 13.6409L18.9996 18.9998" stroke="white" stroke-width="2.4"/>
-                    </svg>
-                </a>
+            <div class="headerAddedIconSearch">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="7.30769" cy="7.30769" r="6.10769" stroke="white" stroke-width="2.4"/>
+                    <path d="M13.6406 13.6409L18.9996 18.9998" stroke="white" stroke-width="2.4"/>
+                </svg>
             </div>
-            <div class="header__icon-bascet">
-                <a href="#" class="header__icon-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.26297 6.59995L2.54533 18.8H15.4547L14.737 6.59995H3.26297ZM17 4.19995H1L0 21.2H18L17 4.19995Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20078 2.4V4.2H3.80078V2.2C3.80078 0.984973 4.78576 0 6.00078 0H12.0008C13.2158 0 14.2008 0.984974 14.2008 2.2V4.2H11.8008V2.4H6.20078Z" fill="white"/>
-                    </svg>
-                </a>
+            <div class="headerAddedIconBascet">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.26297 6.59995L2.54533 18.8H15.4547L14.737 6.59995H3.26297ZM17 4.19995H1L0 21.2H18L17 4.19995Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.20078 2.4V4.2H3.80078V2.2C3.80078 0.984973 4.78576 0 6.00078 0H12.0008C13.2158 0 14.2008 0.984974 14.2008 2.2V4.2H11.8008V2.4H6.20078Z" fill="white"/>
+                </svg>
             </div>
-            <div class="header__wallet">
-                <div class="header__wallet-subtitle">Shopping Cart</div>
-                <div class="header__wallet-values">0,00 EUR</div>
+            <div class="headerAddedIconWallet">
+                <div class="walletSubTitle">Shopping Cart</div>
+                <div class="walletValus">0,00 EUR</div>
             </div>
         </div>
     </header>
     <main class="main">
         <div class="page3Config">
-            <div class="section5">
-                <div class="section5__inner">
-                    <div class="card__shoping-inner">
-                        <div class="card__shoping">
-                            <div class="card__shoping-info-holder">
-                                <div class="card__shoping-info">
-                                    <div class="card__shoping-border">
+            <div class="section5Wrapper">
+                <div class="section5">
+                    <div class="cardShopingInner">
+                        <div class="cardShoping">
+                            <div class="cardShopingInfoInner">
+                                <div class="cardShopingInfo">
+                                    <div class="bordedSpecInner">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="603" height="102" viewBox="0 0 603 102" fill="none">
                                             <path d="M0 1H602V101.5" stroke="black" stroke-width="2"/>
                                         </svg>
                                     </div>
-                                    <h5 class="card__shoping-title">shoping without limits.</h5>
-                                    <p class="card__shoping-subtitle">Choose the best option for you, and it does not matter whether you are.</p>
-                                    <p class="card__shoping-subtitle">You can choose the best option for you, and it does not matter whether you are in Prague or San Francisco. We will deliver your purchase anywhere!</p>
-                                    <button class="card__shoping-button">
-                                        <p class="card__shoping-button-p">Shop now</p>
+                                    <h5 class="cardShopingInfoTittle">shoping without limits.</h5>
+                                    <p class="cardShopingInfoSubTitle">Choose the best option for you, and it does not matter whether you are.</p>
+                                    <p class="cardShopingInfoSubTitle">You can choose the best option for you, and it does not matter whether you are in Prague or San Francisco. We will deliver your purchase anywhere!</p>
+                                    <button class="cardShopingButton">
+                                        <p class="cardShopingButtonP">Shop now</p>
                                     </button>
                                 </div>
                             </div>
-                            <div class="card__shoping-img-holder"></div>
+                            <div class="cardShopingImgInner">
+    
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="module__action-href">
-            <div class="module__action-href-inner">
-                <div class="module__action-href-block">
-                    <p class="module__action--href-info">Home / Womens Dress / Best Chose ${changeHref}</p>
+        <div class="moduleHrefInner">
+            <div class="moduleHrefInnerBlock">
+                <div class="moduleHrefInnerBlockTextInner">
+                    <p class="activeChangeHref">Home / Womens Dress / Best Chose ${changeHref}</p>
                 </div>
             </div>
         </div>
-        <div class="section4wrapper section4__wrapper">
+        <div class="section4wrapper">
             <div class="section4">
-                <div class="section4__special-filter-inner"> 
-                    <div class="section4__special-filte">
-                        <div class="section4__filter-actual-block">
-                            <div class="section4__filter-actual-list">
-                                <div class="section4__filter-actual-action">
-                                    <div class="section4__filter-actual-title-inner">
-                                        <p class="section4__filter-actual-title">Filter</p>
+                <div class="section4TitleInnerSpecialSetting">
+                    <div class="section4TitleInnerSpecialSettingInner">
+                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInner">
+                            <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlock">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockTitlePlusResetInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockTitlePlusResetInnerTitle">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockTitlePlusResetInnerTitleText">Filter</p>
                                     </div>
-                                    <div class="section4__filter-actual-reset-inner">
-                                        <p class="section4__filter-actual-reset">RESET ALL</p>
-                                    </div>
-                                </div>
-                                <div class="section4__filter-actual-item">
-                                    <div class="section4__filter-actual-title-inner">
-                                        <p class="section4__filter-actual-title">Brand:</p>
-                                    </div>
-                                    <div class="section4__filter-actual-state">
-                                        <div class="section4__filter-actual-state-item">bardot</div>
-                                        <div class="section4__filter-actual-state-item">Cooper</div>
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockTitlePlusResetInnerReset">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockTitlePlusResetInnerResetText">RESET ALL</p>
                                     </div>
                                 </div>
-                                <div class="section4__filter-actual-item">
-                                    <div class="section4__filter-actual-title-inner">
-                                        <p class="section4__filter-actual-title">Size (Inches):</p>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitle">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitleText">Brand:</p>
                                     </div>
-                                    <div class="section4__filter-actual-state">
-                                        <div class="section4__filter-actual-state-item">${W32}</div>
-                                    </div>
-                                </div>
-                                <div class="section4__filter-actual-item">
-                                    <div class="section4__filter-actual-title-inner">
-                                        <p class="section4__filter-actual-title">Dress length:</p>
-                                    </div>
-                                    <div class="section4__filter-actual-state">
-                                        <div class="section4__filter-actual-state-item">${hight low}</div>
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStates">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterStatesItemInnerActiveStatesState">bardot</div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterStatesItemInnerActiveStatesState">Cooper</div>
                                     </div>
                                 </div>
-                                <div class="section4__filter-actual-item">
-                                    <div class="section4__filter-actual-title-inner">
-                                        <p class="section4__filter-actual-title">Color:</p>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitle">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitleText">Size (Inches):</p>
                                     </div>
-                                    <div class="section4__filter-actual-state">
-                                        <div class="section4__filter-actual-state-item">${#fffff}</div>
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStates">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStatesState">${W32}</div>
                                     </div>
                                 </div>
-                                <div class="section4__filter-actual-item">
-                                    <div class="section4__filter-actual-title-inner">
-                                        <p class="section4__filter-actual-title">Price Range:</p>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitle">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitleText">Dress length:</p>
                                     </div>
-                                    <div class="section4__filter-actual-state">
-                                        <div class="section4__filter-actual-state-item">Price range ${0.00 EUR – 250 EUR}</div>
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStates">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStatesState">${hight low}</div>
+                                    </div>
+                                </div>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitle">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitleText">Color:</p>
+                                    </div>
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStates">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStatesState">${#fffff}</div>
+                                    </div>
+                                </div>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitle">
+                                        <p class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerTitleText">Price Range:</p>
+                                    </div>
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStates">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterStatesInnerContentBlockActiveFilterItemInnerActiveStatesState">Price range ${0.00 EUR – 250 EUR}</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="section4__filter-handle-list">
-                            <div class="section4__filter-handle-item">
-                                <div class="section4__filter-handle-title-inner">
-                                    <p class="section4__filter-handle-title brand-title">Brand</p>
+                        <div class="section4TitleInnerSpecialSettingInnerFilterInner">
+                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInner">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerTitleInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerTitleInnerTitle section4TitleInnerTitle active">Brand</p>
                                 </div>
-                                <div class="section4__filter-handle-list-inner brand-list-inner">
-                                    <div class="section4__filter-handle-list">
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="STATE" class="section4__filter-handle-checkbox">
-                                            <label for="STATE" class="section4__filter-handle-label">STATE</label>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyle section4TitleInnerFilterListStyle">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="STATE" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="STATE" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">STATE</label>
                                         </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="COOPER" class="section4__filter-handle-checkbox">
-                                            <label for="COOPER" class="section4__filter-handle-label">COOPER</label>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="COOPER" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="COOPER" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">COOPER</label>
                                         </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="BARDOT" class="section4__filter-handle-checkbox">
-                                            <label for="BARDOT" class="section4__filter-handle-label">BARDOT</label>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="BARDOT" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="BARDOT" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">BARDOT</label>
                                         </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="ALFANI" class="section4__filter-handle-checkbox">
-                                            <label for="ALFANI" class="section4__filter-handle-label">ALFANI</label>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="ALFANI" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="ALFANI" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">ALFANI</label>
                                         </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="CECE" class="section4__filter-handle-checkbox">
-                                            <label for="CECE" class="section4__filter-handle-label">CECE</label>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="CECE" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="CECE" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">CECE</label>
                                         </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="DONNARICCO" class="section4__filter-handle-checkbox">
-                                            <label for="DONNARICCO" class="section4__filter-handle-label">DONNARICCO</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="section4__filter-handle-item">
-                                <div class="section4__filter-handle-title-inner">
-                                    <p class="section4__filter-handle-title size-title">Size (Inches)</p>
-                                </div>
-                                <div class="color__filter-size-inner size-list-inner">
-                                    <div class="color__filter-size">
-                                        <div class="color__filter-size-list">
-                                            <div class="color__filter-size-item">osfa</div>
-                                            <div class="color__filter-size-item">w26</div>
-                                            <div class="color__filter-size-item">w27</div>
-                                            <div class="color__filter-size-item">w28</div>
-                                            <div class="color__filter-size-item">w29</div>
-                                            <div class="color__filter-size-item">w30</div>
-                                            <div class="color__filter-size-item">w31</div>
-                                            <div class="color__filter-size-item">w32</div>
-                                            <div class="color__filter-size-item">w33</div>
-                                            <div class="color__filter-size-item">w34</div>
-                                            <div class="color__filter-size-item">w35</div>
-                                            <div class="color__filter-size-item">w36</div>
-                                            <div class="color__filter-size-item">w38</div>
-                                            <div class="color__filter-size-item">w40</div>
-                                            <div class="color__filter-size-item">w42</div>
-                                            <div class="color__filter-size-item">w44</div>
-                                            <div class="color__filter-size-item">w46</div>
-                                            <div class="color__filter-size-item">w48</div>
-                                            <div class="color__filter-size-item">w50</div>
-                                            <div class="color__filter-size-item">w52</div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="DONNARICCO" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="DONNARICCO" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">DONNA RICCO</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" section4__filter-handle-item">
-                                <div class="section4__filter-handle-title-inner">
-                                    <p class="active section4__filter-handle-title dress-title">Dress length</p>
+                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilSizeInner">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilSizeInnerInnerTitleInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerFilSizeInnerInnerTitleInnerTitle section4TitleInnerTitle active">Size (Inches)</p>
                                 </div>
-                                <div id="filterLenght" class="section4__filter-handle-list-inner dress-list-inner">
-                                    <div class="section4__filter-handle-list">
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="SHORT" class="section4__filter-handle-checkbox">
-                                            <label for="SHORT" class="section4__filter-handle-label">SHORT</label>
-                                        </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="KNEE" class="section4__filter-handle-checkbox">
-                                            <label for="KNEE" class="section4__filter-handle-label">KNEE LENGTH</label>
-                                        </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="HIGHT" class="section4__filter-handle-checkbox">
-                                            <label for="HIGHT" class="section4__filter-handle-label">HIGHT LOW</label>
-                                        </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="LONG" class="section4__filter-handle-checkbox">
-                                            <label for="LONG" class="section4__filter-handle-label">LONG</label>
-                                        </div>
-                                        <div class="section4__filter-handle-prop">
-                                            <input type="checkbox" id="MIDI" class="section4__filter-handle-checkbox">
-                                            <label for="MIDI" class="section4__filter-handle-label">MIDI</label>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilSizeInnerInnerColorFilterInner">
+                                    <div class="colorFilter">
+                                        <div class="colorFilterListStyle">
+                                            <div class="colorFilterListStyleListItem">osfa</div>
+                                            <div class="colorFilterListStyleListItem">w26</div>
+                                            <div class="colorFilterListStyleListItem">w27</div>
+                                            <div class="colorFilterListStyleListItem">w28</div>
+                                            <div class="colorFilterListStyleListItem">w29</div>
+                                            <div class="colorFilterListStyleListItem">w30</div>
+                                            <div class="colorFilterListStyleListItem">w31</div>
+                                            <div class="colorFilterListStyleListItem">w32</div>
+                                            <div class="colorFilterListStyleListItem">w33</div>
+                                            <div class="colorFilterListStyleListItem">w34</div>
+                                            <div class="colorFilterListStyleListItem">w35</div>
+                                            <div class="colorFilterListStyleListItem">w36</div>
+                                            <div class="colorFilterListStyleListItem">w38</div>
+                                            <div class="colorFilterListStyleListItem">w40</div>
+                                            <div class="colorFilterListStyleListItem">w42</div>
+                                            <div class="colorFilterListStyleListItem">w44</div>
+                                            <div class="colorFilterListStyleListItem">w46</div>
+                                            <div class="colorFilterListStyleListItem">w48</div>
+                                            <div class="colorFilterListStyleListItem">w50</div>
+                                            <div class="colorFilterListStyleListItem">w52</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                                <!-- ???? -->
-                            <div class="section4__filter-handle-item">
-                                <div class="section4__filter-handle-title-inner">
-                                    <p class="section4__filter-handle-title color-title">Color</p>
+                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFil">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilLengthTitleInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerFilLengthTitleInnerTitle section4TitleInnerTitle active">Dress length</p>
                                 </div>
-                                <div class="section4__filter-handle-color color-list-inner">
-                                    <div class="section4__filter-handle-color-list">
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>  
+                                <div id="filterLenght" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyle section4TitleInnerFilterListStyle">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="STATE" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="STATE" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">STATE</label>
                                         </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="COOPER" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="COOPER" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">COOPER</label>
                                         </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="BARDOT" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="BARDOT" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">BARDOT</label>
                                         </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
-                                        </div>
-                                        <div class="section4__filter-handle-border">
-                                            <div class="section4__filter-handle-color-item"></div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItem section4TitleInnerFilterListStyleItem">
+                                            <input type="checkbox" id="ALFANI" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemInput FilterCheckBox">
+                                            <label for="ALFANI" class="section4TitleInnerSpecialSettingInnerFilterInnerFilBrandInnerListInnerListStyleListItemLabel section4TitleInnerFilterListStyleItemText">ALFANI</label>
                                         </div>
                                     </div>
+                            </div>
+                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInner">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerTitleInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerTitleInnerTitle section4TitleInnerTitle active">Color</p>
+                                </div>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyle">
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem">
+                                            </div>  
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
+                                        <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorder">
+                                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilColorInnerColorInnerListStyleBorderListItem"></div>
+                                        </div>
                                 </div>
                             </div>
-                            <div class="section4__filter-handle-item">
-                                <div class="section4__filter-handle-title-inner">
-                                    <p class="section4__filter-handle-title price-title">Price Range</p>
+                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInner">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerTitleInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerTitleInnerTitle section4TitleInnerTitle active">Price Range</p>
                                 </div>
-                                <div class="section4__filter-handle-price-inner price-list-inner">
-                                    <div class="section4__filter-handle-price-values-inner">
-                                        <div id="min-value" class="section4__filter-handle-price-value"></div>
-                                        <div id="max-value" class="section4__filter-handle-price-value"></div>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInnerPrice">
+                                        <div id="min-value" class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInnerPriceStart"></div>
+                                        <div id="max-value" class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInnerPriceEnd"></div>
                                     </div>
-                                    <div class="section4__filter-handle-price-rage-inner">
+                                    <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInnerSlider">
                                         <div class="range-slider">
                                             <div class="range-fill"></div>
                                             <input
@@ -340,431 +331,559 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="section4__filter-handle-button-inner">
-                                    <button class="section4__filter-handle-button" onclick="{$applyPriceFilter}">APPLY</button>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInnerButtonInner">
+                                    <button class="section4TitleInnerSpecialSettingInnerFilterInnerFilPriceInnerListStyleInnerButtonInnerButton" onclick="{$applyPriceFilter}">APPLY</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="section4__filter-handle-info">
-                            <div class="section4__filter-handle-title-inner">
-                                <p class="section4__filter-handle-title">About Dresses</p>
-                            </div>
-                            <div class="section4__filter-handle-subtitle-inner">
-                                <p class="section4__filter-handle-subtitle">Every day we’re gonna be dropping the latest trends to help you nail every Summer sitch. Whether it’s a graduation, your mate's wedding, or just a cute day at the races with the gals, our occasion dresses have got you covered. Not looking for something fancy? No stress. We’ve got day dresses for days (aka bodycon dresses, t-shirt dresses, oversized shirt dresses).</p>
+                            <div class="section4TitleInnerSpecialSettingInnerFilterInnerInfoDress">
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerInfoDressInnerTitleInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerInfoDressInnerTitleInnerTitle section4TitleInnerTitle">About Dresses</p>
+                                </div>
+                                <div class="section4TitleInnerSpecialSettingInnerFilterInnerInfoDressInnerTextInner">
+                                    <p class="section4TitleInnerSpecialSettingInnerFilterInnerInfoDressInnerTextInnerText">Every day we’re gonna be dropping the latest trends to help you nail every Summer sitch. Whether it’s a graduation, your mate's wedding, or just a cute day at the races with the gals, our occasion dresses have got you covered. Not looking for something fancy? No stress. We’ve got day dresses for days (aka bodycon dresses, t-shirt dresses, oversized shirt dresses).</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="catalogPlusButtonInner">
-                    <div class="slidePriceAndSizeInner slider__price-size">
-                        <div class="slidePriceAndSizeInnerPriceBlock slider__price">
-                            <select name="userPrice" id="userPriceState" class="slidePriceAndSizeInnerPriceBlockSelect slider__price-select">
-                                <option value="1" class="slidePriceAndSizeInnerPriceBlockSelectOption slider__price-option">PRICE (HIGHT TO LOW)</option>
-                                <option value="2" class="slidePriceAndSizeInnerPriceBlockSelectOption slider__price-option">PRICE (LOW TO HIGHT)</option>
+                    <div class="slidePriceAndSizeInner">
+                        <div class="slidePriceAndSizeInnerPriceBlock">
+                            <select name="userPrice" id="userPriceState" class="slidePriceAndSizeInnerPriceBlockSelect">
+                                <option value="1" class="slidePriceAndSizeInnerPriceBlockSelectOption">PRICE (HIGHT TO LOW)</option>
+                                <option value="2" class="slidePriceAndSizeInnerPriceBlockSelectOption">PRICE (LOW TO HIGHT)</option>
                             </select>
                         </div>
-                        <div class="slidePriceAndSizeInnerSizeBlock slider__size">
-                            <select name="userSize" id="userSizeState" class="slidePriceAndSizeInnerSizeBlockSelect slider__size-select">
-                                <option value="w26" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">26</option>
-                                <option value="w27" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">27</option>
-                                <option value="w28" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">28</option>
-                                <option value="w29" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">29</option>
-                                <option value="w30" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">30</option>
-                                <option value="w31" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">31</option>
-                                <option value="w32" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">32</option>
-                                <option value="w33" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">33</option>
-                                <option value="w34" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">34</option>
-                                <option value="w35" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">35</option>
-                                <option value="w36" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">36</option>
-                                <option value="w37" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">37</option>
-                                <option value="w38" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">38</option>
-                                <option value="w40" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">40</option>
-                                <option value="w42" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">42</option>
-                                <option value="w44" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">44</option>
-                                <option value="w46" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">46</option>
-                                <option value="w48" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">48</option>
-                                <option value="w50" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">50</option>
-                                <option value="w52" class="slidePriceAndSizeInnerSizeBlockSelectOption slider__size-option">52</option>
+                        <div class="slidePriceAndSizeInnerSizeBlock">
+                            <select name="userSize" id="userSizeState" class="slidePriceAndSizeInnerSizeBlockSelect">
+                                <option value="w26" class="slidePriceAndSizeInnerSizeBlockSelectOption">26</option>
+                                <option value="w27" class="slidePriceAndSizeInnerSizeBlockSelectOption">27</option>
+                                <option value="w28" class="slidePriceAndSizeInnerSizeBlockSelectOption">28</option>
+                                <option value="w29" class="slidePriceAndSizeInnerSizeBlockSelectOption">29</option>
+                                <option value="w30" class="slidePriceAndSizeInnerSizeBlockSelectOption">30</option>
+                                <option value="w31" class="slidePriceAndSizeInnerSizeBlockSelectOption">31</option>
+                                <option value="w32" class="slidePriceAndSizeInnerSizeBlockSelectOption">32</option>
+                                <option value="w33" class="slidePriceAndSizeInnerSizeBlockSelectOption">33</option>
+                                <option value="w34" class="slidePriceAndSizeInnerSizeBlockSelectOption">34</option>
+                                <option value="w35" class="slidePriceAndSizeInnerSizeBlockSelectOption">35</option>
+                                <option value="w36" class="slidePriceAndSizeInnerSizeBlockSelectOption">36</option>
+                                <option value="w37" class="slidePriceAndSizeInnerSizeBlockSelectOption">37</option>
+                                <option value="w38" class="slidePriceAndSizeInnerSizeBlockSelectOption">38</option>
+                                <option value="w40" class="slidePriceAndSizeInnerSizeBlockSelectOption">40</option>
+                                <option value="w42" class="slidePriceAndSizeInnerSizeBlockSelectOption">42</option>
+                                <option value="w44" class="slidePriceAndSizeInnerSizeBlockSelectOption">44</option>
+                                <option value="w46" class="slidePriceAndSizeInnerSizeBlockSelectOption">46</option>
+                                <option value="w48" class="slidePriceAndSizeInnerSizeBlockSelectOption">48</option>
+                                <option value="w50" class="slidePriceAndSizeInnerSizeBlockSelectOption">50</option>
+                                <option value="w52" class="slidePriceAndSizeInnerSizeBlockSelectOption">52</option>
                             </select>
                         </div>
                     </div>
-                    <div class="section4__side-catalog">
-                        <div class="section__catalog-list">
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                    <div class="InnerCatalog">
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                <div class="section__catalog-img"></div>
-                                <div class="section__catalog-info">
-                                    <div class="section__catalog-gander-inner">
-                                        <p class="section__catalog-gander">TOP women</p>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
                                     </div>
-                                    <div class="section__catalog-sup-title-inner">
-                                        <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                    </div>
-                                    <div class="section__catalog-price-inner">
-                                        <p class="section__catalog-price">139,00 EUR</p>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="section__catalog-item">
-                                <div class="section__catalog-img"></div>
-                                <div class="section__catalog-info">
-                                    <div class="section__catalog-gander-inner">
-                                        <p class="section__catalog-gander">TOP women</p>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
                                     </div>
-                                    <div class="section__catalog-sup-title-inner">
-                                        <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                                    <div class="section__catalog-price-inner">
-                                        <p class="section__catalog-price">139,00 EUR</p>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="section__catalog-item">
-                                <div class="section__catalog-img"></div>
-                                <div class="section__catalog-info">
-                                    <div class="section__catalog-gander-inner">
-                                        <p class="section__catalog-gander">TOP women</p>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                                    <div class="section__catalog-sup-title-inner">
-                                        <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
                                     </div>
-                                    <div class="section__catalog-price-inner">
-                                        <p class="section__catalog-price">139,00 EUR</p>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="section__catalog-item">
-                                <div class="section__catalog-img"></div>
-                                <div class="section__catalog-info">
-                                    <div class="section__catalog-gander-inner">
-                                        <p class="section__catalog-gander">TOP women</p>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                                    <div class="section__catalog-sup-title-inner">
-                                        <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
                                     </div>
-                                    <div class="section__catalog-price-inner">
-                                        <p class="section__catalog-price">139,00 EUR</p>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="section__catalog-item">
-                                <div class="section__catalog-img"></div>
-                                <div class="section__catalog-info">
-                                    <div class="section__catalog-gander-inner">
-                                        <p class="section__catalog-gander">TOP women</p>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                                    <div class="section__catalog-sup-title-inner">
-                                        <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
                                     </div>
-                                    <div class="section__catalog-price-inner">
-                                        <p class="section__catalog-price">139,00 EUR</p>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="section__catalog-item">
-                                <div class="section__catalog-img"></div>
-                                <div class="section__catalog-info">
-                                    <div class="section__catalog-gander-inner">
-                                        <p class="section__catalog-gander">TOP women</p>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
                                     </div>
-                                    <div class="section__catalog-sup-title-inner">
-                                        <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                                    <div class="section__catalog-price-inner">
-                                        <p class="section__catalog-price">139,00 EUR</p>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="section__catalog-item" id="activeSale">
-                                    <div class="section__catalog-img">
-                                        <div class="section__item-sale-inner">
-                                            <p class="section__item-sale">-30%</p>
-                                        </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">235,00 EUR</p>
-                                        </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
                                     </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
                                     </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class=" section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
                                     </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__catalog-item" id="activeSale">
-                                    <div class="section__catalog-img">
-                                        <div class="section__item-sale-inner">
-                                            <p class="section__item-sale">-30%</p>
-                                        </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
                                     </div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">235,00 EUR</p>
-                                        </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
                                     </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section5">
-                        <div class="section5__inner">
-                            <div class="card__shoping-inner">
-                                <div class="card__shoping">
-                                    <div class="card__shoping-info-holder">
-                                        <div class="card__shoping-info">
-                                            <div class="card__shoping-border">
+                    <div class="section5Wrapper">
+                        <div class="section5">
+                            <div class="cardShopingInner">
+                                <div class="cardShoping">
+                                    <div class="cardShopingInfoInner">
+                                        <div class="cardShopingInfo">
+                                            <div class="bordedSpecInner">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="603" height="102" viewBox="0 0 603 102" fill="none">
                                                     <path d="M0 1H602V101.5" stroke="black" stroke-width="2"/>
                                                 </svg>
                                             </div>
-                                            <h5 class="card__shoping-title">shoping without limits.</h5>
-                                            <p class="card__shoping-subtitle">Choose the best option for you, and it does not matter whether you are.</p>
-                                            <p class="card__shoping-subtitle">You can choose the best option for you, and it does not matter whether you are in Prague or San Francisco. We will deliver your purchase anywhere!</p>
-                                            <button class="card__shoping-button">
-                                                <p class="card__shoping-button-p">Shop now</p>
+                                            <h5 class="cardShopingInfoTittle">shoping without limits.</h5>
+                                            <p class="cardShopingInfoSubTitle">Choose the best option for you, and it does not matter whether you are.</p>
+                                            <p class="cardShopingInfoSubTitle">You can choose the best option for you, and it does not matter whether you are in Prague or San Francisco. We will deliver your purchase anywhere!</p>
+                                            <button class="cardShopingButton">
+                                                <p class="cardShopingButtonP">Shop now</p>
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="card__shoping-img-holder"></div>
+                                    <div class="cardShopingImgInner">
+            
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section4__side-catalog">
-                        <div class="section__catalog-list">
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
+                    <div class="InnerCatalog">
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
                                     </div>
-                            </div>
-                            <div class="section__catalog-item" id="activeSale">
-                                    <div class="section__catalog-img">
-                                        <div class="section__item-sale-inner">
-                                            <p class="section__item-sale">-30%</p>
-                                        </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
                                     </div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">235,00 EUR</p>
-                                        </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
                                     </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class=" section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="section__catalog-item" id="activeSale">
-                                    <div class="section__catalog-img">
-                                        <div class="section__item-sale-inner">
-                                            <p class="section__item-sale">-30%</p>
-                                        </div>
-                                    </div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">235,00 EUR</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="section__catalog-item">
-                                    <div class="section__catalog-img"></div>
-                                    <div class="section__catalog-info">
-                                        <div class="section__catalog-gander-inner">
-                                            <p class="section__catalog-gander">TOP women</p>
-                                        </div>
-                                        <div class="section__catalog-sup-title-inner">
-                                            <p class="section__catalog-sup-title">Angels malu zip jeans slim black used</p>
-                                        </div>
-                                        <div class="section__catalog-price-inner">
-                                            <p class="section__catalog-price">139,00 EUR</p>
-                                        </div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="section__catalog-button-inner">
-                            <button class="section__catalog-button">
-                                <p class="section__catalog-button-text">see more</p>
-                            </button>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+    
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">139,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InnerCatalogInnerItem" id="activeSale">
+                            <div class="catalogItem">
+                                <div class="catalogItemImgInner">
+                                    <div class="percentOfSale">
+                                        <p class="percentOfSaleP">-30%</p>
+                                    </div>
+                                </div>
+                                <div class="catalogItemInfoInner">
+                                    <div class="catalogItemInfoInnerGander">
+                                        <p class="catalogItemInfoInnerGanderP">TOP women</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerSubTitle">
+                                        <p class="catalogItemInfoInnerSubTitleP">Angels malu zip jeans slim black used</p>
+                                    </div>
+                                    <div class="catalogItemInfoInnerPrice">
+                                        <p class="catalogItemInfoInnerPriceP">235,00 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogButtonInner">
+                        <button class="catalogButtonInnerUploadNew">
+                            <p class="catalogButtonInnerUploadNewP">see more</p>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section10">
-            <div class="section10__inner">
-                <div class="section10__block">
-                    <div class="section10__list-style-inner">
-                        <ul class="section10__list-style">
-                            <li class="section10__list-item">Duties and Taxes Guaranteed</li>
-                            <li class="section10__list-item">Free Express Shipping</li>
-                            <li class="section10__list-item">Customer Love</li>
-                            <li class="section10__list-item">Easy Returns</li>
-                            <li class="section10__list-item">Secure Payment</li>
+        <div class="section10Wrapper">
+            <div class="section10">
+                <div class="section10Inner">
+                    <div class="section10InnerListStyleInner">
+                        <ul class="section10InnerListStyleInnerListStyle">
+                            <li class="section10InnerListStyleInnerListStyleListItem">Duties and Taxes Guaranteed</li>
+                            <li class="section10InnerListStyleInnerListStyleListItem">Free Express Shipping</li>
+                            <li class="section10InnerListStyleInnerListStyleListItem">Customer Love</li>
+                            <li class="section10InnerListStyleInnerListStyleListItem">Easy Returns</li>
+                            <li class="section10InnerListStyleInnerListStyleListItem">Secure Payment</li>
                         </ul>
                     </div>
                 </div>
@@ -772,98 +891,97 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="footer__menu">
-            <div class="footer__content-holder">
-                <div class="footer__logo-inner">
-                    <a href="#" class="footer__logo-link">
-                        <img src="./img/logo_shop.png" alt="Logo" class="footer__logo-img">
+        <div class="footer_menu">
+            <div class="footerContentHolder">
+                <div class="footerContentHolderLogo_footer">
+                    <a href="#" class="logo_footer_href">
+                        <img src="./img/logo_shop.png" alt="Logo" class="logo_footer-img">
                     </a>
                 </div>
-                <div class="footer__content-inner">
-                    <div class="footer__content" id="footerMenuItem">
-                        <div class="footer__content-item" data-num="1">
-                            <div class="footer__card-inner">
-                                <div class="footer__card">
-                                    <h5 class="footer__card-title">FEATURES</h5>
+                <div class="sections_info">
+                    <div class="footerContentWrapper" id="footerMenuItem">
+                        <div class="futuresContent" data-num="1">
+                            <div class="footerContentCardInner">
+                                <div class="footerContentCardInnerTitleInner">
+                                    <h5 class="footerContentCardInnerTitleInnerTitle">FEATURES</h5>
                                 </div>
-                                <ul class="footer__card-list">
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">MEN</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">WOMEN</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">BOYS</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">GIRLS</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">NEW ARRIVALS</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">SHOES</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">SHOES</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">COTHES</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">ACCESSORIES</a></li>
+                                <ul class="footerContentCardInnerListStyle">
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">MEN</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">WOMEN</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">BOYS</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">GIRLS</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">NEW ARRIVALS</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">SHOES</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">COTHES</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">ACCESSORIES</a></li>
                                 </ul>
-                                <div class="footer__card-border"></div>
+                                <div class="footerContentCardInner-BorderBlock"></div>
                             </div>
                         </div>
-                        <div class="footer__content-item" data-num="2">
-                            <div class="footer__card-inner">
-                                <div class="footer__card">
-                                    <h5 class="footer__card-title">MENU</h5>
+                        <div class="futuresContent" data-num="2">
+                            <div class="footerContentCardInner">
+                                <div class="footerContentCardInnerTitleInner">
+                                    <h5 class="footerContentCardInnerTitleInnerTitle">MENU</h5>
                                 </div>
-                                <ul class="footer__card-list">
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">ABOUT US</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">CONTACTS US</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">MY ACCOUNT</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">ORDER HISTORY</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">MY WISHLIST</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">BLOG</a></li>
-                                    <li class="footer__card-item"><a href="#" class="footerContentCardInnerListItemLink footer__card-item-link">LOGIN</a></li>
+                                <ul class="footerContentCardInnerListStyle">
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">ABOUT US</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">CONTACTS US</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">MY ACCOUNT</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">ORDER HISTORY</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">MY WISHLIST</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">BLOG</a></li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">LOGIN</a></li>
                                 </ul>
-                                <div class="footer__card-border"></div>
+                                <div class="footerContentCardInner-BorderBlock"></div>
                             </div>
                         </div>
-                        <div class="footer__content-item" data-num="3">
-                            <div class="footer__card-inner">
-                                <div class="footer__card">
-                                    <h5 class="footer__card-title">CONTACTS US</h5>
+                        <div class="futuresContent" data-num="3">
+                            <div class="footerContentCardInner">
+                                <div class="footerContentCardInnerTitleInner">
+                                    <h5 class="footerContentCardInnerTitleInnerTitle">CONTACTS US</h5>
                                 </div>
-                                <ul class="footer__card-list">
-                                    <li class="footer__card-item footer__suptitle-style">ADDRESS:</li>
-                                    <li class="footer__card-item"><a href="https://www.google.com.ua/maps/search/123+STREET+NAME,+CITY,+ENGLAND/@52.7276578,-7.6046226,6z/data=!3m1!4b1?entry=ttu" target="_blank" class="footerContentCardInnerListItemLink footer__card-item-link">123 STREET NAME, CITY, ENGLAND</a></li>
-                                    <li class="footer__card-item footer__suptitle-style">Phone:</li>
-                                    <li class=" footer__card-item"><a href="#" class="footerContentCardInnerListItemLink">(123) 456-7890</a></li>
-                                    <li class="footer__card-item footer__suptitle-style">EMAIL:</li>
-                                    <li class="footer__card-item"><a href="https://www.google.com/intl/ru/gmail/about/" target="_blank" class="footerContentCardInnerListItemLink footer__card-item-link">MAIL@EXAMPLE.COM</a></li>
-                                    <li class="footer__card-item footer__suptitle-style">WORKING DAYS/HOURS</li>
-                                    <li class="footer__card-item">MON - SUN / 9:00AM - 8:00PM</li>
+                                <ul class="footerContentCardInnerListStyle">
+                                    <li class="footerContentCardInnerListItem StylesSupTitle">ADDRESS:</li>
+                                    <li class="footerContentCardInnerListItem"><a href="https://www.google.com.ua/maps/search/123+STREET+NAME,+CITY,+ENGLAND/@52.7276578,-7.6046226,6z/data=!3m1!4b1?entry=ttu" target="_blank" class="footerContentCardInnerListItemLink">123 STREET NAME, CITY, ENGLAND</a></li>
+                                    <li class="footerContentCardInnerListItem StylesSupTitle">Phone:</li>
+                                    <li class="footerContentCardInnerListItem"><a href="#" class="footerContentCardInnerListItemLink">(123) 456-7890</a></li>
+                                    <li class="footerContentCardInnerListItem StylesSupTitle">EMAIL:</li>
+                                    <li class="footerContentCardInnerListItem"><a href="https://www.google.com/intl/ru/gmail/about/" target="_blank" class="footerContentCardInnerListItemLink">MAIL@EXAMPLE.COM</a></li>
+                                    <li class="footerContentCardInnerListItem StylesSupTitle">WORKING DAYS/HOURS</li>
+                                    <li class="footerContentCardInnerListItem">MON - SUN / 9:00AM - 8:00PM</li>
                                 </ul>
-                                <div class="footer__card-border"></div>
+                                <div class="footerContentCardInner-BorderBlock"></div>
                             </div>
                         </div>
-                        <div class="footer__content-item">
-                            <div class="footer__card-inner">
-                                <div class="footer__card">
-                                    <h5 class="footer__card-title">FOLLOW US</h5>
+                        <div class="futuresContent">
+                            <div class="footerContentCardInner">
+                                <div class="footerContentCardInnerTitleInner">
+                                    <h5 class="footerContentCardInnerTitleInnerTitle">FOLLOW US</h5>
                                 </div>
-                                <ul class="footer__card-list">
-                                    <li class="footer__card-item footer__icon-social"><a href="https://www.facebook.com/?ref=logo" target="_blank" class="footer__card-item-link">FACEBOOK</a></li>
-                                    <li class="footer__card-item footer__icon-social"><a href="https://twitter.com/?lang=ru" target="_blank" class="footer__card-item-link">TWITTER</a></li>
-                                    <li class="footer__card-item footer__icon-social"><a href="https://www.instagram.com/" target="_blank" class="footer__card-item-link">INSTAGRAM</a></li>
+                                <ul class="footerContentCardInnerListStyle">
+                                    <li class="footerContentCardInnerListItem IconSocial"><a href="https://www.facebook.com/?ref=logo" target="_blank" class="footerContentCardInnerListItemLink">FACEBOOK</a></li>
+                                    <li class="footerContentCardInnerListItem IconSocial"><a href="https://twitter.com/?lang=ru" target="_blank" class="footerContentCardInnerListItemLink">TWITTER</a></li>
+                                    <li class="footerContentCardInnerListItem IconSocial"><a href="https://www.instagram.com/" target="_blank" class="footerContentCardInnerListItemLink">INSTAGRAM</a></li>
                                 </ul>
-                                <div class="footer__card-border"></div>
+                                <div class="footerContentCardInner-BorderBlock"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer__join-us">
-                        <h5 class="footer__join-us-title">JOIN US</h5>
-                        <p class="footer__join-us-subtitle">SUBSCRIBE TO OUR NEWSLETTERS</p>
-                        <div class="footer__join-us-form-inner">
-                            <div class="footer__join-us-form">
-                                <input type="text" class="footer__join-us-input" placeholder="Email Addres">
+                    <div class="section_join_us">
+                        <h5 class="title_of_section">JOIN US</h5>
+                        <p class="sup_input_text">SUBSCRIBE TO OUR NEWSLETTERS</p>
+                        <div class="foot_form_holder">
+                            <div class="input_holder">
+                                <input type="text" class="foot-input" placeholder="Email Addres">
                             </div>
-                            <div class="footer__join-us-button"><p class="footer__join-us-button-text">SUBSCRIBE</p></div>
+                            <div class="button_footer"><p class="button_footer-p">SUBSCRIBE</p></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__mark-inner">
-            <div class="footer__mark">@ 2019.CRISP THEME DEVELOPED BY BELVG</div>
+        <div class="sub_footer_holder">
+            <div class="mark">@ 2019.CRISP THEME DEVELOPED BY BELVG</div>
         </div>
     </footer>
 </body>

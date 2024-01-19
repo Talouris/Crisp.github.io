@@ -1,20 +1,17 @@
-.module__action-href {
-    display: flex;
-    justify-content: center;
-    margin: 13px 0;
-    color: #828282;
+.moduleHrefInner {
     color: rgba(130, 130, 130, 1);
-    &-inner {
+    &Block {
         margin-left: 21px;
         margin-top: 10px;
         margin-bottom: 10px;
-        
-    }
-    &-info {
-        font-family: 'Roboto';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 68px; /* 485.714% */
+        &TextInnder {
+            .activeChangeHref {
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 68px; /* 485.714% */
+            }
+        }
     }
 }
