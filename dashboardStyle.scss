@@ -65,6 +65,9 @@
                 &:hover {
                     background: #F0F2F2;
                 }
+                &.active-dashboard {
+                    background-color: red;
+                }
             }
             &__info-inner {
                 display: none;
@@ -199,6 +202,12 @@
                 font-weight: 600;
                 line-height: 20px; /* 142.857% */
                 border: 1px solid #E6F1FA;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                    background: #000;
+                    border: 1px solid #000;
+                }
             }
 
             // section book styles 

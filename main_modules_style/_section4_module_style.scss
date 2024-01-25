@@ -522,6 +522,46 @@
                     }
                 }
             }
+            &:nth-of-type(13) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg1.png');
+                    @media screen and (min-width: 800px) {
+                        background-image: url('./img/catalogImg1Desk.png');
+                    }
+                }
+            }
+            &:nth-of-type(14) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg2.png');
+                    @media screen and (min-width: 800px) {
+                        background-image: url('./img/catalogImg2Desk.png');
+                    }
+                }
+            }
+            &:nth-of-type(15) {
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg0.png');
+                    @media screen and (min-width: 800px) {
+                        background-image: url('./img/catalogImg0Desk.png');
+                    }
+                }
+            }
+            &:nth-of-type(16) {
+                display: block;
+                
+                @media screen and (min-width: 460px) and (max-width: 620px) {
+                    display: none;
+                }
+                @media screen and (min-width:1110px) and (max-width:1480px) {
+                    display: none;
+                }
+                .section__catalog-img {
+                    background-image: url('./img/catalogImg3.png');
+                    @media screen and (min-width: 800px) {
+                        background-image: url('./img/catalogImg3Desk.png');
+                    }
+                }
+            }
         }
     } 
 }

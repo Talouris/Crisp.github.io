@@ -237,6 +237,7 @@ input[type=checkbox] {
 @media screen and (min-width: 460px) {
   .section__catalog-list {
     grid-template-columns: 139px 139px 139px;
+    max-width: none;
   }
 }
 @media screen and (min-width: 620px) {
@@ -1035,6 +1036,9 @@ input[type=range]::-webkit-slider-runnable-track {
 .content__inner .dashboard__item:hover {
   background: #F0F2F2;
 }
+.content__inner .dashboard__item.active-dashboard {
+  background-color: red;
+}
 .content__inner .dashboard__info-inner {
   display: none;
 }
@@ -1167,6 +1171,12 @@ input[type=range]::-webkit-slider-runnable-track {
   font-weight: 600;
   line-height: 20px; /* 142.857% */
   border: 1px solid #E6F1FA;
+  cursor: pointer;
+}
+.content__inner .dashboard__account-content-info-item-button:hover {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
 }
 @media screen and (min-width: 900px) {
   .content__inner .dashboard__info-book {
@@ -1536,6 +1546,13 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 305px;
   background: #fff;
   padding: 20px 0;
+  border: 1px solid #fff;
+}
+.footer__join-us-button:hover {
+  border: 1px solid gold;
+}
+.footer__join-us-button:hover .footer__join-us-button-text {
+  color: red;
 }
 @media screen and (min-width: 1820px) {
   .footer__join-us-button {

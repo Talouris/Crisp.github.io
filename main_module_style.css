@@ -237,6 +237,7 @@ input[type=checkbox] {
 @media screen and (min-width: 460px) {
   .section__catalog-list {
     grid-template-columns: 139px 139px 139px;
+    max-width: none;
   }
 }
 @media screen and (min-width: 620px) {
@@ -2255,6 +2256,51 @@ input[type=range]::-webkit-slider-runnable-track {
     background-image: url("./img/catalogImg4Desk.png");
   }
 }
+.main .section4 .section__catalog-item:nth-of-type(13) .section__catalog-img {
+  background-image: url("./img/catalogImg1.png");
+}
+@media screen and (min-width: 800px) {
+  .main .section4 .section__catalog-item:nth-of-type(13) .section__catalog-img {
+    background-image: url("./img/catalogImg1Desk.png");
+  }
+}
+.main .section4 .section__catalog-item:nth-of-type(14) .section__catalog-img {
+  background-image: url("./img/catalogImg2.png");
+}
+@media screen and (min-width: 800px) {
+  .main .section4 .section__catalog-item:nth-of-type(14) .section__catalog-img {
+    background-image: url("./img/catalogImg2Desk.png");
+  }
+}
+.main .section4 .section__catalog-item:nth-of-type(15) .section__catalog-img {
+  background-image: url("./img/catalogImg0.png");
+}
+@media screen and (min-width: 800px) {
+  .main .section4 .section__catalog-item:nth-of-type(15) .section__catalog-img {
+    background-image: url("./img/catalogImg0Desk.png");
+  }
+}
+.main .section4 .section__catalog-item:nth-of-type(16) {
+  display: block;
+}
+@media screen and (min-width: 460px) and (max-width: 620px) {
+  .main .section4 .section__catalog-item:nth-of-type(16) {
+    display: none;
+  }
+}
+@media screen and (min-width: 1110px) and (max-width: 1480px) {
+  .main .section4 .section__catalog-item:nth-of-type(16) {
+    display: none;
+  }
+}
+.main .section4 .section__catalog-item:nth-of-type(16) .section__catalog-img {
+  background-image: url("./img/catalogImg3.png");
+}
+@media screen and (min-width: 800px) {
+  .main .section4 .section__catalog-item:nth-of-type(16) .section__catalog-img {
+    background-image: url("./img/catalogImg3Desk.png");
+  }
+}
 .main .section5 {
   padding: 5px 10px;
 }
@@ -3312,6 +3358,13 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 305px;
   background: #fff;
   padding: 20px 0;
+  border: 1px solid #fff;
+}
+.footer__join-us-button:hover {
+  border: 1px solid gold;
+}
+.footer__join-us-button:hover .footer__join-us-button-text {
+  color: red;
 }
 @media screen and (min-width: 1820px) {
   .footer__join-us-button {

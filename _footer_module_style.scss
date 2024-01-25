@@ -267,6 +267,13 @@
         width: 305px;
         background: #fff;
         padding: 20px 0;
+        border: 1px solid #fff;
+        &:hover {
+            border: 1px solid gold;
+            .footer__join-us-button-text {
+                color: red;
+            }
+        }
         @media screen and (min-width:1820px) {
             width: 280px;
             padding: 9.5px 0;

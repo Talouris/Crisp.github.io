@@ -237,6 +237,7 @@ input[type=checkbox] {
 @media screen and (min-width: 460px) {
   .section__catalog-list {
     grid-template-columns: 139px 139px 139px;
+    max-width: none;
   }
 }
 @media screen and (min-width: 620px) {
@@ -1447,6 +1448,13 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 305px;
   background: #fff;
   padding: 20px 0;
+  border: 1px solid #fff;
+}
+.footer__join-us-button:hover {
+  border: 1px solid gold;
+}
+.footer__join-us-button:hover .footer__join-us-button-text {
+  color: red;
 }
 @media screen and (min-width: 1820px) {
   .footer__join-us-button {

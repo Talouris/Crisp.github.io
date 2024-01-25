@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creata an Account </title>
-    <link rel="stylesheet" href="./createNewAccoutStyle.css">
+    <link rel="stylesheet" href="./dashboardStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@300;400;500;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@300;400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -16,7 +16,7 @@
     <div id="root"></div>
     <script type="text/babel">
         function App() {
-
+            
             function HeaderModule() {
                 return (
                     <header className="header" id="burger">
@@ -105,9 +105,33 @@
             }
 
             function MainCreateAccount() {
+                
+                const actionArr = ['Account Dashboard', 'Account Information', 'Address Book', 'My Orders', 'My Wishlist', 'Newsletter Subscriptions'];
+
+                const dashboardTitelsArr = ['accountDashboard', 'accountInformation', 'addressBook', 'myOrders', 'myWishlist', 'newsletterSubscriptions'];
+                const classDef = 'dashboard__item-link';    
+                const infoInner= 'dashboard__info-inner';
+
+                function actionActiveChanger() {
+                    for(i=0; i < dashboardTitelsArr.length; i++) {
+
+                    }
+                };
+
+
+                const [toggleState, setToggleState] = React.useState(2);
+                let activeIndexTab = 1;
+
+                const toggleTab = (item) => {
+                    console.log("click Active", item);
+                    setToggleState(actionArr.indexOf(item)); 
+                    activeIndexTab = actionArr.indexOf(item);
+                }
+                console.log(toggleState);
+
                 return (
                     <main className="main">
-                        <div className="account__create">
+                        <div className="content__inner">
                             <div className="module__action-href">
                                 <div className="module__action-href-inner">
                                     <div className="module__action-href-block">
@@ -115,58 +139,191 @@
                                     </div>
                                 </div>
                             </div>
-                            <div className="account__create-title-inner">
-                                <p className="account__create-title">Create New Customer Account</p>
+                            <div className="content__title-inner">
+                                <p className="content__title">My Dashboard</p>
                             </div>
-                            <div className="account__create-form-inner">
-                                <div className="account__create-suptitle-inner">
-                                    <p className="account__create-suptitle">Personal Information</p>
-                                </div>
-                                <form action="creataAnAccountName" className="account__create-form">
-                                    <div className="account__create-form-item">
-                                        <label for="GetFirstName" className="account__create-form-item-label">First name</label>
-                                        <input id="GetFirstName" type="text" className="account__create-form-item-input"/>
+                            <div className="dashboard">
+                                <div className="dashboard__content">
+                                    <div className="dashboard__list-inner">
+                                        <ul className="dashboard__list">
+                                            {actionArr.map((item)=>(
+                                                <a href="#" 
+                                                className={ toggleState === item ? (classDef + " " + "active-tabs") : (classDef)} 
+                                                onClick={() => toggleTab(item)}>
+                                                    <li className="dashboard__item">{item}</li>
+                                                </a>)
+                                            )}
+                                        </ul>
                                     </div>
-                                    <div class="account__create-form-item">
-                                        <label for="GetLastName" className="account__create-form-item-label">Last Name</label>
-                                        <input id="GetLastName" type="text" className="account__create-form-item-input"/>
+                                    <div className={ toggleState === 0 ? (infoInner + " " + "active-content") : (infoInner)}>
+                                        <div class="dashboard__account-dashboard-inner">
+                                            <div className="dashboard__account-info">   
+                                                <div class="dashboard__account-info-item">
+                                                    <div className="dashboard__account-info-title-inner">
+                                                        <p className="dashboard__account-info-title">Account Information</p>
+                                                    </div>
+                                                    <div className="dashboard__account-info-content">
+                                                        <div class="dashboard__account-content-info-item">
+                                                                <div class="dashboard__account-content-info-item-title">Contact Information</div>
+                                                                <div class="dashboard__account-content-info-item-subtitle">Alex Driver<br/> ExampeAdress@gmail.com</div>
+                                                                <div class="dashboard__account-content-info-item-buttons-inner">
+                                                                    <button class="dashboard__account-content-info-item-button">Edit</button>
+                                                                    <button class="dashboard__account-content-info-item-button">Change Password</button>
+                                                                </div>
+                                                        </div>
+                                                        <div class="dashboard__account-content-info-item">
+                                                                <div class="dashboard__account-content-info-item-title">Newsletters</div>
+                                                                <div class="dashboard__account-content-info-item-subtitle">You don't subscribe to our newsletter.</div>
+                                                                <div class="dashboard__account-content-info-item-buttons-inner">
+                                                                    <button class="dashboard__account-content-info-item-button">Edit</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                                <div class="dashboard__account-info-item">
+                                                    <div className="dashboard__account-info-title-inner">
+                                                        <p className="dashboard__account-info-title">Address Book</p>
+                                                    </div>
+                                                    <div className="dashboard__account-info-content">
+                                                        <div class="dashboard__account-content-info-item">
+                                                                <div class="dashboard__account-content-info-item-title">Default Billing Address</div>
+                                                                <div class="dashboard__account-content-info-item-subtitle">You have not set a default billing address.</div>
+                                                                <div class="dashboard__account-content-info-item-buttons-inner">
+                                                                    <button class="dashboard__account-content-info-item-button">Edit Address</button>
+                                                                </div>
+                                                        </div>
+                                                        <div class="dashboard__account-content-info-item">
+                                                                <div class="dashboard__account-content-info-item-title">Default Shipping Address</div>
+                                                                <div class="dashboard__account-content-info-item-subtitle">You have not set a default shipping address.</div>
+                                                                <div class="dashboard__account-content-info-item-buttons-inner">
+                                                                    <button class="dashboard__account-content-info-item-button">Edit Address</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                            </div>    
+                                        </div>
                                     </div>
-                                    <div class="account__create-form-news-letter">
-                                        <input id="NewsLetter" type="checkbox" className="account__create-form-news-letter-item-input"/>    
-                                        <label for="NewsLetter" className="account__create-form-news-letter-item-label">Sign Up for Newsletter</label>
+                                    <div className={ toggleState === 1 ? (infoInner + " " + "active-content") : (infoInner)}>
+                                        <div className="dashboard__info-content">
+                                            <div className="dashboard__account-info">   
+                                                <div className="dashboard__account-info-title-inner">
+                                                    <p className="dashboard__account-info-title">Account Information</p>
+                                                </div>
+                                                <div className="dashboard__account-info-content">
+                                                    <form action="#" className="dashboard__account-info-form">
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="firstName" className="labelForForms dashboard__account-info-form-item-label">First name</label>
+                                                            <input id="firstName" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder="Alex"/>
+                                                        </div>
+                                                        <div className=" dashboard__account-info-form-item">
+                                                            <label for="lastName" className="labelForForms dashboard__account-info-form-item-label">Last Name</label>
+                                                            <input id="lastName" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder="Password"/>
+                                                        </div>
+                                                        <div className=" dashboard__account-info-form-item-checkbox">
+                                                            <input id="changeEmail" type="checkbox" className="inputForFormsCheckbox dashboard__account-info-form-item-checkbox-input dashboard__input-margin"/>
+                                                            <label for="changeEmail" className=" dashboard__account-info-form-item-checkbox-label">Change Email</label>
+                                                        </div>
+                                                        <div className="dashboard__account-info-form-item-checkbox">
+                                                            <input id="changePass" type="checkbox" className="dashboard__account-info-form-item-checkbox-input"/>
+                                                            <label for="changePass" className=" dashboard__account-info-form-item-checkbox-label">Change Password</label>
+                                                        </div>
+                                                        <div className="dashboard__account-info-form-button-inner">
+                                                            <button className="buttonForForms dashboard__account-info-form-button">SAVE</button>
+                                                        </div>
+                                                    </form>    
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </form> 
-                                <div className="account__create-suptitle-inner">
-                                    <p className="account__create-suptitle">Sign Up for Newsletter</p>
-                                </div>  
-                                <form action="createPassEm" className="account__create-form">
-                                    <div className="account__create-form-item">
-                                        <label for="GetEmail" className="account__create-form-item-label">Email</label>
-                                        <input id="GetEmail" type="Email" className="account__create-form-item-input"/>
+                                    <div className={ toggleState === 2 ? (infoInner + " " + "active-content") : (infoInner)}>
+                                        <div className="dashboard__info-book">
+                                            <div className="dashboard__account-info">   
+                                                <div className="dashboard__account-info-title-inner">
+                                                    <p className="dashboard__account-info-title">Contact Information</p>
+                                                </div>
+                                                <div className="dashboard__account-info-content">
+                                                    <form action="#" className="dashboard__account-info-form">
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="firstName" className="labelForForms dashboard__account-info-form-item-label">First name</label>
+                                                            <input id="firstName" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder="Alex"/>
+                                                        </div>
+                                                        <div className=" dashboard__account-info-form-item">
+                                                            <label for="lastName" className="labelForForms dashboard__account-info-form-item-label">Last Name</label>
+                                                            <input id="lastName" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder="Password"/>
+                                                        </div>
+
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="company" className="labelForForms dashboard__account-info-form-item-label">Company</label>
+                                                            <input id="company" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder=""/>
+                                                        </div>
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="phoneNumber" className="labelForForms dashboard__account-info-form-item-label">Phone Number</label>
+                                                            <input id="phoneNumber" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder=""/>
+                                                        </div>
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="fax" className="labelForForms dashboard__account-info-form-item-label">Fax</label>
+                                                            <input id="fax" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder=""/>
+                                                        </div>
+                                                    </form>    
+                                                </div>
+                                                <div className="dashboard__account-info-title-inner">
+                                                    <p className="dashboard__account-info-title">Contact Information</p>
+                                                </div>
+
+                                                <div className="dashboard__account-info-content">
+                                                    <form action="#" className="dashboard__account-info-form">
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="streetAddress" className="labelForForms dashboard__account-info-form-item-label">Street Address</label>
+                                                            <input id="streetAddress" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder=""/>
+                                                        </div>
+                                                        <div className=" dashboard__account-info-form-item">
+                                                                <label for="none" className="labelForForms dashboard__account-info-form-item-label"></label>
+                                                            <input id="none" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder=""/>
+                                                        </div>
+
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="country" className="labelForForms dashboard__account-info-form-item-label">Country</label>
+                                                            <select id="country" type="text" className="inputForForms dashboard__account-info-form-item-input select-def" placeholder="">
+                                                                <option value="Ukraine">Ukraine</option>
+                                                                <option value="Ukraine">USA</option>
+                                                                <option value="Ukraine">Canada</option>    
+                                                            </select>
+                                                        </div>
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="stateProvince" className="labelForForms dashboard__account-info-form-item-label">State/Province</label>
+                                                            <select id="country" type="text" className="inputForForms dashboard__account-info-form-item-input select-def" placeholder="">
+                                                                <option value="Ukraine">Kyiv</option>
+                                                                <option value="Ukraine">Kharkov</option>
+                                                                <option value="Ukraine">Lviv</option>    
+                                                            </select>
+                                                        </div>
+                                                        <div className="dashboard__account-info-form-item">
+                                                            <label for="zipPostalCode" className="labelForForms dashboard__account-info-form-item-label">Zip/Postal Code</label>
+                                                            <input id="zipPostalCode" type="text" className="inputForForms dashboard__account-info-form-item-input" placeholder=""/>
+                                                        </div>
+
+
+                                                        <div className="dashboard__account-info-form-button-inner">
+                                                            <button className="buttonForForms dashboard__account-info-form-button">SAVE ADDRESS</button>
+                                                        </div>
+                                                    </form>    
+                                                </div>
+
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="account__create-form-item">
-                                        <label for="GetPass" className="account__create-form-item-label">Password</label>
-                                        <input id="GetPass" type="password" className="account__create-form-item-input"/>
-                                    </div>
-                                    <div className="account__create-form-item">
-                                        <label for="GetPassConfirm" className="account__create-form-item-label">Confirm password</label>
-                                        <input id="GetPassConfirm" type="password" className="account__create-form-item-input"/>    
-                                    </div>
-                                </form> 
-                                <div className="account__create-button-inner">
-                                    <div className="account__create-holder">
-                                        <button className="account__create-button" onClick={userCreateAccountAdd}>create an account</button>
-                                    </div>
-                                    <div className="account__create-button-back-inner">
-                                        <button className="account__create-batton-back">back</button>
-                                    </div>
+                                    <div className={ toggleState === 3 ? (infoInner + " " + "active-content") : (infoInner)}>my__orders</div>
+                                    <div className={ toggleState === 4 ? (infoInner + " " + "active-content") : (infoInner)}>my__wishlist</div>
+                                    <div className={ toggleState === 5 ? (infoInner + " " + "active-content") : (infoInner)}>newsletter__subscription</div>
                                 </div>
                             </div>
                         </div>  
                     </main>
                 );
             };
-
+            
             function SupFooterModule() {
                 return (
                     <div class="section10">
@@ -333,3 +490,5 @@
     </script>
 </body>
 </html>
+<!-- className={ toggleState === item ? (classDef + " " + dashboardTitelsArr[actionArr.indexOf(item)] + " " + "active-tabs") : (classDef + " " + dashboardTitelsArr[actionArr.indexOf(item)])}  -->
+<!-- actionArr.indexOf(item)                                               -->
